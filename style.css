@@ -43,20 +43,23 @@ header {
         text-transform: uppercase;
       }
 
-      .green__icon{
-        width: 5px;
-        height: 5px;
-      }
     }
-    .menu__shopping-cart {
-      align-items: center;
-      justify-content: center;
-      border: 1px #e1e2e8 solid;
-      hr {
-        width: 1px;
-        height: 30px;
-        color: #e1e2e8;
-      }
+    .menu-shopping-cart{
+      display: flex;
+      flex-direction: row;
+      text-decoration: none;
+    }
+    .menu-shopping-cart hr {
+      width: 1px;
+      height: 20px;
+      color: black;
+    }
+    .menu-shopping-text{
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+    .menu-shopping-cart-icon{
+      height: 20px;
     }
   }
 }
