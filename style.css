@@ -2,15 +2,17 @@
   font-family: Metropolis;
   src: url(/fonts/Metropolis-Black.woff2);
 }
+
 header {
-  font-family: Metropolis;
-  text-transform: uppercase;
-  background-color: #fff;
-  height: 70px;
   display: flex;
   justify-content: space-between;
-  padding: 0 20px;
   align-items: center;
+  height: 70px;
+  font-family: Metropolis;
+  color: black;
+  padding: 0 20px;
+  border-bottom: 1px #E1E2E8 solid;
+
 }
 
 .logo {
@@ -21,7 +23,7 @@ header {
 .menu {
   display: flex;
   margin-left: auto;
-  padding: 0px 60px;
+  padding-left: auto;
 }
 
 .menu-items{
@@ -29,8 +31,15 @@ header {
   align-items: center;
   margin-right: 72px;
 }
+
+
 .menu-item {
-  margin-left: 20px;
+  display: flex;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+  width: auto;
+
 }
 
 .icon {
@@ -41,14 +50,112 @@ header {
 
 
 
-.menu-item--cart {
-  /* Stylizacja koszyka */
-  background-color: #dff0d8;
+.menu-item-cart {
+  display: flex;
+  align-items: center;
+  border: 1px #E1E2E8 solid;
   padding: 5px 10px;
-  border-radius: 5px;
+  float: left;
 }
 
-.menu-item--cart span {
-  /* Stylizacja wartości koszyka */
-  font-weight: bold;
+.menu-item-cart hr{
+  height: 30px;
+  width: 1px;
+  color: #E1E2E8;
+}
+
+.menu-item-cart-info p{
+  display: flex;
+  text-align: left;
+  padding: 0px;
+  margin: 0 15px;
+}
+
+.menu-item-cart-info p:last-child{
+  font-size: 11px;
+}
+
+.green-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px #E1E2E8 solid;
+  background-color: #9BCB3B;
+  height: 58px;
+  width: 35px;
+}
+
+.green-icon img{
+  fill: #FFFFFF;
+  height: 9px;
+  width: 12px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation-li{
+display: flex;
+}
+
+.li-item {
+  margin: 0 30px;
+  list-style: none;
+}
+
+.li-text{
+  font-family: Metropolis;
+  text-decoration: none;
+  color: #000000;
+  padding: 10px 15px;
+  text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 780px) {
+
+  .conainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header{
+    position: absolute;
+    bottom: 0px;
+    border-top: 1px #E1E2E8 solid;
+
+  }
+  
+  .menu {
+    padding: auto;
+  }
+  .menu-items p {
+    display: none;
+  }
+  
+  .menu-item-cart-info p{
+    display: none;
+  }
+  .menu-items{
+    display: flex;
+    align-items: center;
+    margin: 0px;
+  }
+
+  .icon{
+    margin: 0px 15px;
+  }
+  
 }
