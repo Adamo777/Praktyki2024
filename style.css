@@ -45,18 +45,22 @@ header {
 
     }
     .menu-shopping-cart{
-      display: flex;
-      flex-direction: row;
+      width: auto;
+      text-transform: uppercase;
       text-decoration: none;
+      border: 1px black solid;
+      
+      
     }
     .menu-shopping-cart hr {
       width: 1px;
       height: 20px;
       color: black;
     }
-    .menu-shopping-text{
+    .menu-shopping-cart p{
       text-transform: uppercase;
       text-decoration: none;
+
     }
     .menu-shopping-cart-icon{
       height: 20px;
