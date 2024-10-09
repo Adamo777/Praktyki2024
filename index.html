@@ -42,9 +42,10 @@
             </div>
           </a>
         </div>
-        <div>
-          <a href="#" class="menu-item menu-item-cart">
-            <div class="icon icon-shopping-cart">
+        
+        <div class="menu-item-cart">
+          <a href="#" class="menu-item ">
+            <div class="icon ">
               <img src="/icons/icon_06.svg" alt="Koszyk" />
             </div>
             <hr />
@@ -53,15 +54,15 @@
               <p>3456,00 zł</p>
             </div>
           </a>
+          <div class="green-icon">
+            <img
+              src="/icons/icon_04.svg"
+              alt="icon-green"
+              class="icon-arrow-green"
+            />
+          </div>
         </div>
 
-        <div class="green-icon">
-          <img
-            src="/icons/icon_04.svg"
-            alt="icon-green"
-            class="icon-arrow-green"
-          />
-        </div>
       </header>
 
       <nav>
@@ -91,7 +92,7 @@
         <div class="hamburger-menu" onclick="toggleMenu()">
           <img src="icons/icon_11.svg" class="menu-hamburger" />
 
-          <div class="ul-list-menu visible height">
+          <div class="ul-list-menu">
             <ul class="navigation-li-activate">
               <li class="li-item-activate">
                 <a href="#"><p class="li-text-activate">Źródła światła</p></a>
@@ -126,8 +127,9 @@
         </div>
       </nav>
 
-      <section>
-        <div class="slider">
+      <!-- <section>
+
+        <div class="slider" onclick="swapper()" >
           <div class="slide-img">
             <img src="/photos/slide_02.png" alt="Slide-01" />
           
@@ -144,13 +146,13 @@
         </div>
           </div>
 
-          <!-- <div class="slider slider-2">
+          <div class="slider-1 visible" onclick="swapper()">
             <div class="slide-img">
-              <img src="/photos/img_01.jpg" alt="Slide-02" />
-            </div>
+              <img src="/photos/img_01.jpg" alt="Slide-02"/>
+            
             <div class="slide-text">
               <p class="text-large">Poznaj SEDNA</p>
-              <p class="text-medium">Schneider Electric/p>
+              <p class="text-medium">Schneider Electric
               <p class="text-small">
                 Sedna to osprzęt elektroinstalacyjny <br>
                  o wyrazistym kształcie oraz <br>
@@ -158,10 +160,14 @@
               </p>
               <button class="slider-btn">Zobacz więcej</button>
             </div>
-            </div> -->
+            </div>
+            </div>
         </div>
-      </section>
+
+      </section> -->
+
     </div>
     <script src="hamburger-menu.js"></script>
+    <script src="swapper.js"></script>
   </body>
 </html>
