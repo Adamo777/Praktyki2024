@@ -1,133 +1,97 @@
 <!DOCTYPE html>
 <html lang="pl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
-  </head>
 
-  <body>
-    <div class="container">
-      <header>
-        <div class="logo">
-          <img src="/photos/logo.png" alt="Logo HURT" />
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Document</title>
+</head>
 
-        <div class="menu">
-          <a href="#" class="menu-item">
-            <div class="menu-items">
-              <div class="icon icon-phone">
-                <img src="/icons/icon_01.svg" alt="Kontakt" />
-              </div>
-              <p>Kontakt</p>
-            </div>
-          </a>
+<body>
+  <div class="container">
+  <header>
+    <div class="logo">
+      <img src="/photos/logo.png" alt="Logo HURT" />
+    </div>
 
-          <a href="#" class="menu-item">
-            <div class="menu-items">
-              <div class="icon icon-star">
-                <img src="/icons/icon_02.svg" alt="Ulubione" />
-              </div>
-              <p>Ulubione</p>
-            </div>
-          </a>
-
-          <a href="#" class="menu-item">
-            <div class="menu-items">
-              <div class="icon icon-user">
-                <img src="/icons/icon_03.svg" alt="Moje konto" />
-              </div>
-              <p>Moje konto</p>
-            </div>
-          </a>
-        </div>
-        
-        <div class="menu-item-cart">
-          <a href="#" class="menu-item ">
-            <div class="icon ">
-              <img src="/icons/icon_06.svg" alt="Koszyk" />
-            </div>
-            <hr />
-            <div class="menu-item-cart-info">
-              <p>Twój koszyk</p>
-              <p>3456,00 zł</p>
-            </div>
-          </a>
-          <div class="green-icon">
-            <img
-              src="/icons/icon_04.svg"
-              alt="icon-green"
-              class="icon-arrow-green"
-            />
+    <div class="menu">
+      <a href="#" class="menu-item">
+        <div class="menu-items">
+          <div class="icon icon-phone">
+            <img src="/icons/icon_01.svg" alt="Kontakt" />
           </div>
+          <p>Kontakt</p>
         </div>
+      </a>
 
-      </header>
-
-      <nav>
-        <div class="ul-list">
-          <ul class="navigation-li">
-            <li class="li-item">
-              <a href="#"><p class="li-text">Źródła światła</p></a>
-            </li>
-            <li class="li-item">
-              <a href="#"><p class="li-text">Oświetlenie wewnętrzne</p></a>
-            </li>
-            <li class="li-item">
-              <a href="#"><p class="li-text">Gniazdka, wyłączniki</p></a>
-            </li>
-            <li class="li-item">
-              <a href="#"><p class="li-text">Automatyka, sterowanie</p></a>
-            </li>
-            <li class="li-item">
-              <a href="#"><p class="li-text">Rozdzielnie aparatura</p></a>
-            </li>
-            <li class="li-item">
-              <a href="#"><p class="li-text">Materiały instalacyjne</p></a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="hamburger-menu" onclick="toggleMenu()">
-          <img src="icons/icon_11.svg" class="menu-hamburger" />
-
-          <div class="ul-list-menu">
-            <ul class="navigation-li-activate">
-              <li class="li-item-activate">
-                <a href="#"><p class="li-text-activate">Źródła światła</p></a>
-              </li>
-              <li class="li-item-activate">
-                <a href="#"
-                  ><p class="li-text-activate">Oświetlenie wewnętrzne</p></a
-                >
-              </li>
-              <li class="li-item-activate">
-                <a href="#"
-                  ><p class="li-text-activate">Gniazdka, wyłączniki</p></a
-                >
-              </li>
-              <li class="li-item-activate">
-                <a href="#"
-                  ><p class="li-text-activate">Automatyka, sterowanie</p></a
-                >
-              </li>
-              <li class="li-item-activate">
-                <a href="#"
-                  ><p class="li-text-activate">Rozdzielnie aparatura</p></a
-                >
-              </li>
-              <li class="li-item-activate">
-                <a href="#"
-                  ><p class="li-text-activate">Materiały instalacyjne</p></a
-                >
-              </li>
-            </ul>
+      <a href="#" class="menu-item">
+        <div class="menu-items">
+          <div class="icon icon-star">
+            <img src="/icons/icon_02.svg" alt="Ulubione" />
           </div>
+          <p>Ulubione</p>
         </div>
-      </nav>
+      </a>
 
-      <!-- <section>
+      <a href="#" class="menu-item">
+        <div class="menu-items">
+          <div class="icon icon-user">
+            <img src="/icons/icon_03.svg" alt="Moje konto" />
+          </div>
+          <p>Moje konto</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="menu-item-cart">
+      <a href="#" class="menu-item ">
+        <div class="icon-shopping-cart">
+          <img src="/icons/icon_06.svg" alt="Koszyk" />
+        </div>
+        <hr />
+        <div class="menu-item-cart-info">
+          <p>Twój koszyk</p>
+          <p>3456,00 zł</p>
+        </div>
+      </a>
+      <div class="green-icon">
+        <img src="/icons/icon_04.svg" alt="icon-green" class="icon-arrow-green" />
+      </div>
+    </div>
+  </header>
+
+  <nav>
+    <div class="menu-swipe">
+      <img src="/icons/icon_11.svg" alt="Menu icon" class="menu-swipe-icon">
+    </div>
+    <div class="nav-ul-list">
+      <ul class="nav-ul">
+        <li class="nav-ul-li">
+          <a href="#">Źródła światła</a>
+        </li>
+        <li class="nav-ul-li">
+          <a href="#">Oświetlenie wewnętrzne</a>
+        </li>
+        <li class="nav-ul-li">
+          <a href="#">Gniazdka, wyłączniki</a>
+        </li>
+        <li class="nav-ul-li">
+          <a href="#">Automatyka, sterowanie</a>
+        </li>
+        <li class="nav-ul-li">
+          <a href="#">Rozdzielnie aparatura</a>
+        </li>
+        <li class="nav-ul-li">
+          <a href="#">Materiały instalacyjne</a>
+        </li>
+      </ul>
+    </div>
+
+
+  </nav>
+
+  <!-- <section>
 
         <div class="slider" onclick="swapper()" >
           <div class="slide-img">
@@ -146,7 +110,7 @@
         </div>
           </div>
 
-          <div class="slider-1 visible" onclick="swapper()">
+          <div class="slider-1 unvisible" onclick="swapper()">
             <div class="slide-img">
               <img src="/photos/img_01.jpg" alt="Slide-02"/>
             
@@ -166,8 +130,9 @@
 
       </section> -->
 
-    </div>
-    <script src="hamburger-menu.js"></script>
-    <script src="swapper.js"></script>
-  </body>
+  </div>
+  <script src="hamburger-menu.js"></script>
+  <script src="swapper.js"></script>
+</body>
+
 </html>
