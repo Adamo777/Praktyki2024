@@ -8,7 +8,7 @@
   </head>
 
   <body>
-    <div class="conainer">
+    <div class="container">
       <header>
         <div class="logo">
           <img src="/photos/logo.png" alt="Logo HURT" />
@@ -68,26 +68,100 @@
         <div class="ul-list">
           <ul class="navigation-li">
             <li class="li-item">
-              <a href="#" class="li-text">Źródła światła</a>
+              <a href="#"><p class="li-text">Źródła światła</p></a>
             </li>
             <li class="li-item">
-              <a href="#" class="li-text">Oświetlenie wewnętrzne</a>
+              <a href="#"><p class="li-text">Oświetlenie wewnętrzne</p></a>
             </li>
             <li class="li-item">
-              <a href="#" class="li-text">Gniazdka, wyłączniki</a>
+              <a href="#"><p class="li-text">Gniazdka, wyłączniki</p></a>
             </li>
             <li class="li-item">
-              <a href="#" class="li-text">Automatyka, sterowanie</a>
+              <a href="#"><p class="li-text">Automatyka, sterowanie</p></a>
             </li>
             <li class="li-item">
-              <a href="#" class="li-text">Rozdzielnie aparatura</a>
+              <a href="#"><p class="li-text">Rozdzielnie aparatura</p></a>
             </li>
             <li class="li-item">
-              <a href="#" class="li-text">Materiały instalacyjne</a>
+              <a href="#"><p class="li-text">Materiały instalacyjne</p></a>
             </li>
           </ul>
         </div>
+
+        <div class="hamburger-menu" onclick="toggleMenu()">
+          <img src="icons/icon_11.svg" class="menu-hamburger" />
+
+          <div class="ul-list-menu visible height">
+            <ul class="navigation-li-activate">
+              <li class="li-item-activate">
+                <a href="#"><p class="li-text-activate">Źródła światła</p></a>
+              </li>
+              <li class="li-item-activate">
+                <a href="#"
+                  ><p class="li-text-activate">Oświetlenie wewnętrzne</p></a
+                >
+              </li>
+              <li class="li-item-activate">
+                <a href="#"
+                  ><p class="li-text-activate">Gniazdka, wyłączniki</p></a
+                >
+              </li>
+              <li class="li-item-activate">
+                <a href="#"
+                  ><p class="li-text-activate">Automatyka, sterowanie</p></a
+                >
+              </li>
+              <li class="li-item-activate">
+                <a href="#"
+                  ><p class="li-text-activate">Rozdzielnie aparatura</p></a
+                >
+              </li>
+              <li class="li-item-activate">
+                <a href="#"
+                  ><p class="li-text-activate">Materiały instalacyjne</p></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
+
+      <section>
+        <div class="slider">
+          <div class="slide-img">
+            <img src="/photos/slide_02.png" alt="Slide-01" />
+          
+          <div class="slide-text">
+            <p class="text-large">Philips HUE</p>
+            <p class="text-medium">Oświetl swoj dom</p>
+            <p class="text-small">
+              Wyobraź sobie, że jednym <br>
+              dotknięciem wyłączasz <br>
+              wszystkie światła.
+            </p>
+            <button class="slider-btn">Zobacz więcej</button>
+          </div>
+        </div>
+          </div>
+
+          <!-- <div class="slider slider-2">
+            <div class="slide-img">
+              <img src="/photos/img_01.jpg" alt="Slide-02" />
+            </div>
+            <div class="slide-text">
+              <p class="text-large">Poznaj SEDNA</p>
+              <p class="text-medium">Schneider Electric/p>
+              <p class="text-small">
+                Sedna to osprzęt elektroinstalacyjny <br>
+                 o wyrazistym kształcie oraz <br>
+                  unikalnej formie.
+              </p>
+              <button class="slider-btn">Zobacz więcej</button>
+            </div>
+            </div> -->
+        </div>
+      </section>
     </div>
+    <script src="hamburger-menu.js"></script>
   </body>
 </html>

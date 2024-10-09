@@ -1,6 +1,23 @@
 @font-face {
-  font-family: Metropolis;
+  font-family: Metropolis-bold;
   src: url(/fonts/Metropolis-Black.woff2);
+}
+
+@font-face {
+  font-family: Metropolis-light;
+  src: url(/fonts/Metropolis-Light.woff2);
+}
+
+@font-face {
+  font-family: Metropolis-regular;
+  src: url(/fonts/Metropolis-Regular.woff2);
+}
+
+/* header */
+
+body {
+  width: 1920px;
+  height: auto;
 }
 
 header {
@@ -8,7 +25,7 @@ header {
   justify-content: space-between;
   align-items: center;
   height: 70px;
-  font-family: Metropolis;
+  font-family: Metropolis-bold;
   color: black;
   padding: 0 20px;
   border-bottom: 1px #e1e2e8 solid;
@@ -37,15 +54,18 @@ header {
   text-decoration: none;
   border: 1px black solid;
 }
+
 .menu-shopping-cart hr {
   width: 1px;
   height: 20px;
   color: black;
 }
+
 .menu-shopping-cart p {
   text-transform: uppercase;
   text-decoration: none;
 }
+
 .menu-shopping-cart-icon {
   height: 20px;
 }
@@ -86,6 +106,7 @@ header {
 }
 
 .menu-item-cart-info p:last-child {
+  font-family: Metropolis-Light;
   font-size: 11px;
 }
 
@@ -105,46 +126,125 @@ header {
   width: 12px;
 }
 
+/* nav */
+
 nav {
   display: flex;
+  border-bottom: 1px #e1e2e8 solid;
 }
 
-.ul-list{
+.ul-list {
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin: auto;
   text-align: center;
 }
+
 .navigation-li {
   display: flex;
   padding-left: 0px;
-
 }
 
 .li-item {
   margin: 0 30px;
   list-style: none;
-  text-align: center;
 }
 
 .li-text {
   font-family: Metropolis;
-  text-decoration: none;
   color: #000000;
   padding: 10px 15px;
   text-transform: uppercase;
-  text-align: center;
   font-size: 10px;
 }
 
+.menu-hamburger {
+  display: none;
+}
 
-/* 
- */
+.ul-list-menu {
+  display: none;
+}
 
+.visible {
+  display: none;
+}
+
+.navigation-li-activate {
+  text-decoration: none;
+  list-style: none;
+  text-transform: uppercase;
+  font-family: Metropolis;
+  margin: 0;
+  padding: 0;
+}
+
+.li-item-activate a {
+  text-decoration: none;
+  color: #000000;
+}
+
+/* section */
+
+.slider {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.slide-img {
+  position: relative;
+}
+.slide-text {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  color: white;
+}
+
+.text-large {
+  margin-top: 0px;
+  font-family: Metropolis-bold;
+  font-size: 44px;
+  margin-bottom: 0;
+}
+
+.text-medium {
+  margin-top: 6px;
+  font-family: Metropolis-light;
+  font-size: 44px;
+  margin-bottom: 19px;
+}
+
+.text-small {
+  margin-top: 0;
+  font-family: Metropolis-regular;
+  font-size: 22px;
+  margin-bottom: 36px;
+}
+
+.slider-btn {
+  margin-top: 0px;
+  background-color: #f74137;
+  box-shadow: none;
+  width: 204px;
+  height: 55px;
+  font-family: Metropolis-bold;
+  color: #ffffff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+/* .slider-btn:hover {
+  background-color: #e1e2e8; /* Green */
+/* color: #3f3f41;
+  transition: background-color 0.3s ease-in-out;
+} */
+
+/* media */
 
 @media (max-width: 780px) {
-  .conainer {
+  .container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -154,14 +254,12 @@ nav {
     bottom: 0px;
     border-top: 1px #e1e2e8 solid;
   }
-
   .menu {
     padding: auto;
   }
   .menu-items p {
     display: none;
   }
-
   .menu-item-cart-info p {
     display: none;
   }
@@ -170,8 +268,43 @@ nav {
     align-items: center;
     margin: 0px;
   }
-
   .icon {
     margin: 0px 15px;
   }
+  .ul-list {
+    display: none;
+  }
+  .logo {
+    display: none;
+  }
+  .hamburger-menu {
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #e1e2e8;
+    width: 400px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .menu-hamburger {
+    height: 30px;
+    width: 30px;
+    color: #000000;
+    display: block;
+  }
+  .ul-list-activate {
+    display: fixed;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .visible {
+    text-align: center;
+    margin: auto;
+    display: block;
+    text-decoration: none;
+  }
 }
+
+/*# sourceMappingURL=style.css.map */
