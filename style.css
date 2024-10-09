@@ -151,6 +151,10 @@ nav {
   list-style: none;
 }
 
+
+.li-item a{
+  text-decoration: none;
+}
 .li-text {
   font-family: Metropolis;
   color: #000000;
