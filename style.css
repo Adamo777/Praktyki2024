@@ -13,6 +13,12 @@
   src: url(/fonts/Metropolis-Regular.woff2);
 }
 
+
+
+.container{
+  width: auto;
+}
+
 /* header */
 
 header {
@@ -146,8 +152,6 @@ header {
 
 nav {
   position: relative;
-  display: flex;
-  justify-content: center;
   border-bottom: 1px #e1e2e8 solid;
 }
 .menu-swipe {
@@ -159,6 +163,7 @@ nav {
   background-color: #e1e2e8;
   display: none;
 }
+
 .menu-swipe-icon {
   height: 30px;
   width: 30px;
@@ -170,11 +175,10 @@ nav {
   list-style: none;
   padding: 0px;
   gap: 50px;
-}
-
-.nav-ul-li {
   text-align: center;
 }
+
+
 .nav-ul-li a {
   text-decoration: none;
   color: #000;
@@ -210,18 +214,19 @@ nav {
 /* section */
 
 section {
-  width: 100%;
   display: flex;
   justify-content: center;
   background: #f2f3f4;
   padding: 20px 30px;
+  box-sizing: border-box;
 }
 
 .slider .slider-1 {
-  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  width: 1500px;
+  
 }
 .slide-img {
   position: relative;
@@ -338,12 +343,13 @@ section {
     top: 0px;
   }
 
-  .menu {
-    margin: 0px;
+  .menu{
+    margin: auto;
+    gap: 0px;
   }
 
   .menu-items {
-    margin-right: 120px;
+    margin: 0px 44px;
   }
 
   .menu-items p {
@@ -385,29 +391,30 @@ section {
     flex-direction: row;
     justify-content: center;
     position: fixed;
+    bottom: 0px;
     border-top: 1px #e1e2e8 solid;
-  }
-
-  .logo {
-    position: fixed;
-    top: 0px;
-  }
-
-  .icon-shopping-cart {
     padding: 0px;
-  }
-  .menu-items {
-    margin-right: 0px;
-  }
-  .menu-item-cart .menu-items p {
-    display: none;
-  }
-  .menu-item-cart-info {
-    display: none;
+    margin: 0;
   }
 
-  nav {
-    border: none;
+  .container {
+    width: auto;
+    height: auto;
+  }
+
+  .menu{
+    margin: 0;
+  }
+
+  .menu-items {
+    margin: 0px 22px;
+  }
+
+  .menu-item-cart-info p{
+    display: none;
+  }
+  .menu-items p {
+    display: none;
   }
 
   .nav-ul-list {
@@ -421,17 +428,8 @@ section {
     width: 100%;
   }
 
-  .visible {
-    display: flex;
-    flex-direction: column;
-    height: 500px;
-    justify-content: center;
-    text-align: center;
-  }
-
-  .unvisible {
-    display: none;
-  }
 }
+
+
 
 /*# sourceMappingURL=style.css.map */
