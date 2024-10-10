@@ -1,14 +1,4 @@
 {
-  "name": "praktyki2024",
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "sass-compile": "sass style.scss:style.css"
-
-  },
-  "author": "",
-  "license": "ISC",
-  "description": "",
   "dependencies": {
     "sass": "^1.79.4"
   }

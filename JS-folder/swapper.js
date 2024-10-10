@@ -1,8 +1,8 @@
 const swapper = () => {
-  const slider = document.querySelector(".slider");
-  const slider1 = document.querySelector(".slider-1");
+  const firstSlide = document.querySelector(".section__first-slide");
+  const secondSlide = document.querySelector(".section__second-slide");
   console.log("sigma");
 
-  slider.classList.toggle("unvisible-slide");
-  slider1.classList.toggle("unvisible-slide");
+  firstSlide.classList.toggle("unvisible-slide");
+  secondSlide.classList.toggle("unvisible-slide");
 };

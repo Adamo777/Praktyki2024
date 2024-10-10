@@ -5,13 +5,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="/icon-font/icons.css">
-  <link rel="stylesheet" href="style.css" />
+
+  <!-- CSS FILES -->
+  <link rel="stylesheet" href="/styles-css/font-face.css">
+  <link rel="stylesheet" href="/css/header-style.css">
+  <link rel="stylesheet" href="/css/nav-style.css">
+  <link rel="stylesheet" href="/css/section-style.css">
+  <!-- CSS FILES -->
   <title>Document</title>
 </head>
 
 <body>
   <div class="container">
-    <header class="header">
+    <header>
       <div class="header__logo">
         <img src="/photos/logo.png" alt="Logo HURT" />
       </div>
@@ -66,8 +72,7 @@
     <nav>
 
       <div class="nav__menu--swipe" onclick="toggleMenu()">
-        <img src="/icons/icon_11.svg" alt="Menu icon" class="nav__menu--swipe-icon">
-
+        <i class="icon-icon_11 nav__menu--swipe-icon"></i>
 
         <div class="nav__list-unvisible visible unvisible">
           <ul class="nav__list--ul-unvisible">
@@ -119,58 +124,58 @@
 
     </nav>
 
-    <!-- <section>
+    <section>
 
-        <div class="slider" onclick="swapper()" >
+        <div class="section__first-slide" onclick="swapper()" >
              
-          <div class="slide-img">
-            <div class="slider-btn-left">
+          <div class="section__first-slide--img">
+            <div class="section__slide--btn-left">
               <i class="icon-icon_05"></i>
           </div>
-          <div class="slider-btn-right">
+          <div class="section__slide--btn-right">
             <i class="icon-icon_04"></i>
           </div>
             <img src="/photos/slide_02.png" alt="Slide-01" />
           
-          <div class="slide-text">
-            <p class="text-large">Philips HUE</p>
-            <p class="text-medium">Oświetl swoj dom</p>
-            <p class="text-small">
+          <div class="section__slide--text">
+            <p class="section__slide--text-large">Philips HUE</p>
+            <p class="section__slide--text-medium">Oświetl swoj dom</p>
+            <p class="section__slide--text-small">
               Wyobraź sobie, że jednym <br>
               dotknięciem wyłączasz <br>
               wszystkie światła.
             </p>
-            <button class="slider-btn">Zobacz więcej</button>
+            <button class="section__slide--btn-show-more">Zobacz więcej</button>
           </div>
         </div>
           </div>
 
-          <div class="slider-1 unvisible-slide" onclick="swapper()">
+          <div class="section__second-slide unvisible-slide" onclick="swapper()">
             
-            <div class="slide-img">
-              <div class="slider-btn-left">
+            <div class="section__second-slide--img">
+              <div class="section__slide--btn-left">
                 <i class="icon-icon_05"></i>
             </div>
-            <div class="slider-btn-right">
+            <div class="section__slide--btn-right">
               <i class="icon-icon_04"></i>
             </div>
               <img src="/photos/img_01.jpg" alt="Slide-02"/>
             
-            <div class="slide-text">
-              <p class="text-large">Poznaj SEDNA</p>
-              <p class="text-medium">Schneider Electric
-              <p class="text-small">
+            <div class="section__slide--text">
+              <p class="section__slide--text-large">Poznaj SEDNA</p>
+              <p class="section__slide--text-medium">Schneider Electric
+              <p class="section__slide--text-small">
                 Sedna to osprzęt elektroinstalacyjny <br>
                  o wyrazistym kształcie oraz <br>
                   unikalnej formie.
               </p>
-              <button class="slider-btn">Zobacz więcej</button>
+              <button class="section__slide--btn-show-more">Zobacz więcej</button>
             </div>
             </div>
             </div>
         </div>
 
-      </section> -->
+      </section>
 
     <script src="/JS-folder/hamburger-menu.js"></script>
     <script src="/JS-folder/swapper.js"></script>
