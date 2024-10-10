@@ -11,60 +11,61 @@
 
 <body>
   <div class="container">
-  <header>
-    <div class="logo">
+  <header class="header">
+    <div class="header__logo">
       <img src="/photos/logo.png" alt="Logo HURT" />
     </div>
-
-    <div class="menu">
-      <a href="#" class="menu-item">
-        <div class="menu-items">
-          <div class="icon-text">
+    <div class="header__menu">
+      <a href="#" class="menu__item">
+        <div class="menu__item--element">
+          <div class="menu__element--icon-text">
             <i class="icon-icon_01"></i>
             <p>kontakt</p>
           </div>
         </div>
       </a>
 
-      <a href="#" class="menu-item">
-        <div class="menu-items">
-          <div class="icon-text">
+      <a href="#" class="menu__item">
+        <div class="menu__item--element">
+          <div class="menu__element--icon-text">
             <i class="icon-icon_02"></i>
             <p>ulubione</p>
           </div>
         </div>
       </a>
 
-      <a href="#" class="menu-item">
-        <div class="menu-items">
-          <div class="icon-text">
+      <a href="#" class="menu__item">
+        <div class="menu__item--element">
+          <div class="menu__element--icon-text">
             <i class="icon-icon_03"></i>
             <p>moje konto</p>
           </div>
         </div>
       </a>
-      <div class="menu-item-cart">
-        <a href="#" class="menu-item ">
-          <div class="icon-shopping-cart">
+
+      <div class="menu__item-cart">
+        <a href="#" class="menu__item ">
+          <div class="menu__item-cart--icon">
             <i class="icon-icon_06"></i>
           </div>
           <hr />
-          <div class="menu-item-cart-info">
+          <div class="menu__item-cart--info">
             <p>Twój koszyk</p>
             <p>3456,00 zł</p>
           </div>
         </a>
-        <div class="green-icon">
+        <div class="menu__item-cart--green-icon">
           <i class="icon-icon_04"></i>
         </div>
       </div>
+
     </div>
 
   </header>
 
   <nav>
 
-    <div class="menu-swipe"onclick="toggleMenu()">
+    <div class="nav__menu--swipe"onclick="toggleMenu()">
       <img src="/icons/icon_11.svg" alt="Menu icon" class="menu-swipe-icon">
     
 
