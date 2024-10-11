@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -148,6 +153,9 @@ header .header__menu .menu__item-cart .menu__item-cart:hover {
   header .header__menu {
     margin: 0;
   }
+  header .header__menu .menu__item-cart--icon {
+    padding-right: 0px;
+  }
   header .header__menu .menu__item--element {
     margin: 0px 22px;
     margin-left: 0px;
@@ -156,6 +164,6 @@ header .header__menu .menu__item-cart .menu__item-cart:hover {
     display: none;
   }
   header .header__menu .menu__item-cart--info p {
-    display: none;
+    font-size: 0px;
   }
 }/*# sourceMappingURL=header-style.css.map */

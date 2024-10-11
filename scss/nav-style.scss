@@ -1,6 +1,8 @@
+
 nav {
   position: relative;
   border-bottom: 1px #e1e2e8 solid;
+  padding: 20px 0px;
 
   .nav__menu--swipe {
     display: flex;
@@ -18,7 +20,6 @@ nav {
       flex-direction: column;
       list-style: none;
       padding: 0px;
-      display: none;
 
       .nav__list--li-unvisible {
         padding: 30px;
@@ -67,18 +68,34 @@ nav {
     .nav__list-visible {
       display: none;
     }
-    .visible {
-      display: flex;
-      flex-direction: column;
-      height: 500px;
-      justify-content: center;
-      text-align: center;
-    }
 
-    .unvisible {
-      display: none;
-    }
+    .nav__list--ul-unvisible{
+      list-style: none;
+      padding-left: 0px;
+
+      .nav__list--li-unvisible a{
+        text-decoration: none;
+        color: #000;
+        font-family: Metropolis-bold;
+        text-transform: uppercase;
+        
+
+      }
   }
+    
+  }
+}
+
+.visible {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  justify-content: center;
+  text-align: center;
+}
+
+.unvisible{
+  display: none;
 }
 
 @media only screen and (max-width: 788px) {
@@ -88,8 +105,7 @@ nav {
     bottom: 72px;
     width: 100%;
   }
-  .nav__list-visible {
-    display: none;
-  }
 
+  .nav__list-visible{
+    display: none;}
 }

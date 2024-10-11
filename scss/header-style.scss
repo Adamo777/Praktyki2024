@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
 header {
   display: flex;
   justify-content: space-between;
@@ -107,7 +113,6 @@ header {
     .menu__element--icon-text i {
       font-size: 30px;
     }
-
     .menu__element--icon-text p {
       display: none;
     }
@@ -163,15 +168,19 @@ header {
 
     .header__menu {
       margin: 0;
+	  .menu__item-cart--icon{
+		  padding-right: 0px;
+	  }
       .menu__item--element {
         margin: 0px 22px;
         margin-left: 0px;
+
         .menu__item--element p {
           display: none;
         }
       }
       .menu__item-cart--info p {
-        display: none;
+        font-size: 0px;
       }
     }
   }
