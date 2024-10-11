@@ -76,13 +76,10 @@ header {
       .menu__item-cart--info p {
         display: flex;
         text-align: left;
-        padding: 0px;
+        padding: 0;
         margin: 0 15px;
 
-        .menu__item-cart--info p:last-child {
-          font-family: Metropolis-light;
-          font-size: 11px;
-        }
+
       }
       .menu__item-cart--green-icon {
         display: flex;
@@ -126,18 +123,18 @@ header {
     flex-direction: row;
     justify-content: center;
     position: fixed;
-    bottom: 0px;
+    bottom: 0;
     border-top: 1px #e1e2e8 solid;
-    padding: 0px;
-    margin: 0;
+    padding: 0;
+    margin-top: 500px;
 
     .header__logo {
       position: fixed;
-      top: 0px;
+      top: 0;
     }
     .header__menu {
       margin: auto;
-      gap: 0px;
+      gap: 0;
       .menu__item--element {
         margin: 0px 44px;
 
@@ -161,26 +158,26 @@ header {
     flex-direction: row;
     justify-content: center;
     position: fixed;
-    bottom: 0px;
+    bottom: 0;
     border-top: 1px #e1e2e8 solid;
-    padding: 0px;
+    padding: 0;
     margin: 0;
 
     .header__menu {
       margin: 0;
 	  .menu__item-cart--icon{
-		  padding-right: 0px;
+		  padding-right: 0;
 	  }
       .menu__item--element {
         margin: 0px 22px;
-        margin-left: 0px;
+        margin-left: 0;
 
         .menu__item--element p {
           display: none;
         }
       }
       .menu__item-cart--info p {
-        font-size: 0px;
+        font-size: 0;
       }
     }
   }
