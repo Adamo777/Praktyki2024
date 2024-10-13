@@ -1,25 +1,33 @@
 <!DOCTYPE html>
 <html lang="pl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- CSS FILES -->
-    <link rel="stylesheet" href="./icon-font/icons.css" />
-    <link rel="stylesheet" href="./styles-css/font-face.css" />
-    <link rel="stylesheet" href="./scss/header-style.css" />
-    <link rel="stylesheet" href="./scss/nav-style.css" />
-    <link rel="stylesheet" href="./scss/section-style.css" />
-    <!-- CSS FILES -->
-    <title>Document</title>
-  </head>
 
-  <body>
-    <div class="container">
-      <header>
-        <div class="header__logo">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- CSS FILES -->
+  <link rel="stylesheet" href="./icon-font/icons.css" />
+  <link rel="stylesheet" href="./styles-css/font-face.css" />
+  <link rel="stylesheet" href="./css/header-style.css" />
+  <link rel="stylesheet" href="./css/nav-style.css" />
+  <link rel="stylesheet" href="./css/section-style.css" />
+  <!-- CSS FILES -->
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container">
+
+    <header>
+      <div class="header">
+        <div class="header__panel">
+        <div class="header__panel--logo">     
           <img src="/photos/logo.png" alt="Logo HURT" />
         </div>
+
         <div class="header__menu">
+          <div class="header__panel--nav-swipe">
+            <i class="icon-icon_09"></i>
+          </div>
           <a href="#" class="menu__item">
             <div class="menu__item--element">
               <div class="menu__element--icon-text">
@@ -52,7 +60,7 @@
               <div class="menu__item-cart--icon">
                 <i class="icon-icon_06"></i>
               </div>
-              <hr />
+              <hr class="menu__item-cart--separator" />
               <div class="menu__item-cart--info">
                 <p>Twój koszyk</p>
                 <p>3456,00 zł</p>
@@ -63,12 +71,11 @@
             </div>
           </div>
         </div>
-      </header>
+      </div>
+    
 
-      <nav>
-        <div class="nav__menu--swipe" onclick="toggleMenu()">
-          <i class="icon-icon_11 nav__menu--swipe-icon"></i>
-          <div class="nav__list--li-unvisible">
+      <div class="nav">
+          <!-- <div class="nav__list--li-unvisible">
             <ul class="nav__list--ul-unvisible visible unvisible">
               <li class="nav__list--li-unvisible">
                 <a href="#">Źródła światła</a>
@@ -89,8 +96,8 @@
                 <a href="#">Materiały instalacyjne</a>
               </li>
             </ul>
-          </div>
-        </div>
+          </div> -->
+     
 
         <div class="nav__list-visible">
           <ul class="nav__list--ul-visible">
@@ -114,11 +121,13 @@
             </li>
           </ul>
         </div>
-      </nav>
+      </div>
+    </header>
 
-      <section>
-        <div class="section__first-slide" onclick="swapper()">
+    <section>
+          <div class="section__first-slide" onclick="swapper()">
           <div class="section__first-slide--img">
+            <img src="./photos/slide_02.png" alt="">
             <div class="section__slide--btn-left">
               <i class="icon-icon_05"></i>
             </div>
@@ -143,6 +152,7 @@
 
         <div class="section__second-slide unvisible-slide" onclick="swapper()">
           <div class="section__second-slide--img">
+            <img src="./photos/img_01.jpg" alt="">
             <div class="section__slide--btn-left">
               <i class="icon-icon_05"></i>
             </div>
@@ -165,7 +175,7 @@
           </div>
         </div>
 
-        <!-- <div class="section_baners">
+        <div class="section_baners">
           <div class="section__baners--first-baner">
             <div class="section__first-baner--text">
               <p>Pomoc eksperta</p>
@@ -195,13 +205,14 @@
               </button>
             </div>
           </div>
-        </div> -->
+        </div>
 
       </section>
 
-    </div>
+  </div>
 
-    <script src="/JS-folder/hamburger-menu.js"></script>
-    <script src="/JS-folder/swapper.js"></script>
-  </body>
+  <script src="/JS-folder/hamburger-menu.js"></script>
+  <script src="/JS-folder/swapper.js"></script>
+</body>
+
 </html>

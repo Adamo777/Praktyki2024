@@ -5,76 +5,79 @@
 
 header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  height: 70px;
+  flex-direction: column;
   font-family: Metropolis-bold;
-  color: black;
   padding: 0 20px;
+}
+header .header__panel {
+  display: flex;
+  flex-direction: row;
   border-bottom: 1px #e1e2e8 solid;
 }
-header .header__logo {
+header .header__panel .header__panel--logo {
   height: 60px;
   width: 250px;
 }
-header .header__menu {
+header .header__panel .header__panel--nav-swipe {
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  color: black;
+}
+header .header__panel .header__menu {
   display: flex;
   margin-left: auto;
   gap: 20px;
 }
-header .header__menu .menu__item {
+header .header__panel .header__menu .menu__item {
   display: flex;
+  flex-direction: row;
   text-transform: uppercase;
   text-decoration: none;
   color: black;
   width: auto;
   align-items: center;
 }
-header .header__menu .menu__item .menu__item--element {
+header .header__panel .header__menu .menu__item .menu__item--element {
   display: flex;
   align-items: center;
   margin-right: 72px;
 }
-header .header__menu .menu__item .menu__item--element .menu__element--icon-text {
+header .header__panel .header__menu .menu__item .menu__item--element .menu__element--icon-text {
   display: flex;
   align-items: center;
   gap: 20px;
   font-size: 14px;
 }
-header .header__menu .menu__item .menu__item--element .menu__element--icon-text .menu__element--icon-text p {
+header .header__panel .header__menu .menu__item .menu__item--element .menu__element--icon-text .menu__element--icon-text p {
   font-family: Metropolis-bold;
   text-transform: uppercase;
-  transition: 0.3s;
 }
-header .header__menu .menu__item .menu__item--element .menu__element--icon-text .menu__element--icon-text:hover {
-  font-size: 25px;
-}
-header .header__menu .menu__item-cart {
+header .header__panel .header__menu .menu__item-cart {
   display: flex;
   align-items: center;
-  border: 1px #e1e2e8 solid;
-  padding: 0;
   justify-content: center;
-  transition: 0.3s;
+  padding: 0;
+  border: 1px #e1e2e8 solid;
 }
-header .header__menu .menu__item-cart .menu__item-cart--icon {
+header .header__panel .header__menu .menu__item-cart .menu__item-cart--icon {
   padding: 5px 20px;
 }
-header .header__menu .menu__item-cart .menu__item-cart--icon .menu__item-cart--icon i {
-  font-size: 25px;
-}
-header .header__menu .menu__item-cart .menu__item-cart hr {
+header .header__panel .header__menu .menu__item-cart .menu__item-cart--separator {
   height: 30px;
   width: 1px;
-  color: #e1e2e8;
+  color: #807d7d;
 }
-header .header__menu .menu__item-cart .menu__item-cart--info p {
-  display: flex;
-  text-align: left;
-  padding: 0;
+header .header__panel .header__menu .menu__item-cart .menu__item-cart--info p {
   margin: 0 15px;
+  padding: 0;
+  text-align: left;
 }
-header .header__menu .menu__item-cart .menu__item-cart--green-icon {
+header .header__panel .header__menu .menu__item-cart .menu__item-cart--info p:last-child {
+  font-family: Metropolis-light;
+}
+header .header__panel .header__menu .menu__item-cart .menu__item-cart--green-icon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -83,12 +86,9 @@ header .header__menu .menu__item-cart .menu__item-cart--green-icon {
   height: 54px;
   width: 35px;
 }
-header .header__menu .menu__item-cart .menu__item-cart--green-icon .menu__item-cart--green-icon i {
+header .header__panel .header__menu .menu__item-cart .menu__item-cart--green-icon .menu__item-cart--green-icon i {
   font-size: 10px;
   color: white;
-}
-header .header__menu .menu__item-cart .menu__item-cart:hover {
-  font-size: 25px;
 }
 
 /* HEADER MEDIA */
@@ -113,28 +113,27 @@ header .header__menu .menu__item-cart .menu__item-cart:hover {
     bottom: 0;
     border-top: 1px #e1e2e8 solid;
     padding: 0;
-    margin-top: 500px;
   }
-  header .header__logo {
+  header .header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  header .header .header__panel {
+    display: flex;
+    border-bottom: none;
+    justify-content: center;
+  }
+  header .header .header__panel .header__panel--nav-swipe {
+    display: inline;
+    margin-right: 72px;
+  }
+  header .header .header__panel .header__panel--logo {
     position: fixed;
     top: 0;
   }
-  header .header__menu {
-    margin: auto;
-    gap: 0;
-  }
-  header .header__menu .menu__item--element {
-    margin: 0px 44px;
-  }
-  header .header__menu .menu__item--element .menu__item--element p {
-    display: none;
-  }
 }
 @media only screen and (max-width: 788px) {
-  .container {
-    width: auto;
-    height: auto;
-  }
   header {
     width: 100%;
     display: flex;

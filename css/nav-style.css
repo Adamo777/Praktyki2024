@@ -1,34 +1,22 @@
-nav {
-  position: relative;
-  border-bottom: 1px #e1e2e8 solid;
-  padding: 20px 0px;
+.nav {
+  padding: 22px 0;
 }
-nav .nav__menu--swipe {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #e1e2e8;
-  display: none;
-}
-nav .nav__menu--swipe .nav__menu--swipe-icon {
-  font-size: 30px;
-}
-nav .nav__menu--swipe .nav__list-unvisible {
+.nav .nav__list-unvisible {
   display: flex;
   flex-direction: column;
   list-style: none;
   padding: 0px;
 }
-nav .nav__menu--swipe .nav__list-unvisible .nav__list--li-unvisible {
+.nav .nav__list-unvisible .nav__list--li-unvisible {
   padding: 30px;
 }
-nav .nav__menu--swipe .nav__list-unvisible .nav__list--li-unvisible .nav__list--li-unvisible a {
+.nav .nav__list-unvisible .nav__list--li-unvisible .nav__list--li-unvisible a {
   text-decoration: none;
   color: #000;
   font-family: Metropolis-bold;
   text-transform: uppercase;
 }
-nav .nav__list--ul-visible {
+.nav .nav__list--ul-visible {
   display: flex;
   justify-content: space-around;
   list-style: none;
@@ -36,35 +24,35 @@ nav .nav__list--ul-visible {
   gap: 50px;
   text-align: center;
 }
-nav .nav__list--ul-visible .nav__list--li-visible a {
+.nav .nav__list--ul-visible .nav__list--li-visible a {
   text-decoration: none;
   color: #000;
   font-family: Metropolis-bold;
   text-transform: uppercase;
   transition: 0.3s;
 }
-nav .nav__list--ul-visible .nav__list--li-visible a .nav__list--li-visible a:hover {
+.nav .nav__list--ul-visible .nav__list--li-visible a .nav__list--li-visible a:hover {
   font-size: 30px;
 }
 
 @media only screen and (max-width: 920px) {
-  nav {
-    border: none;
+  .nav {
+    display: none;
   }
-  nav .nav__menu--swipe {
+  .nav__menu--swipe {
     display: flex;
     position: fixed;
     bottom: 72px;
     width: 100%;
   }
-  nav .nav__list-visible {
+  .nav__list-visible {
     display: none;
   }
-  nav .nav__list--ul-unvisible {
+  .nav__list--ul-unvisible {
     list-style: none;
     padding-left: 0px;
   }
-  nav .nav__list--ul-unvisible .nav__list--li-unvisible a {
+  .nav__list--ul-unvisible .nav__list--li-unvisible a {
     text-decoration: none;
     color: #000;
     font-family: Metropolis-bold;
