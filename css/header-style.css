@@ -16,6 +16,11 @@
   display: flex;
   margin-left: auto;
 }
+.header__panel .header__menu .header__panel--nav-swipe {
+  font-size: 30px;
+  margin-right: auto;
+  left: 0;
+}
 .header__panel .header__menu .menu__item {
   display: flex;
   text-decoration: none;
@@ -93,18 +98,12 @@
   header .header__panel {
     justify-content: center;
   }
-  header .header__panel .header__menu {
-    justify-content: right;
-  }
   header .header__panel .header__logo {
     position: fixed;
     top: 0;
   }
 }
 @media only screen and (max-width: 788px) {
-  .header__menu {
-    margin-left: 0;
-  }
   .menu__item-cart--icon {
     padding: 0 10px;
   }

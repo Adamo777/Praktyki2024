@@ -18,6 +18,13 @@
     display: flex;
     margin-left: auto;
 
+
+    .header__panel--nav-swipe{
+      font-size: 30px;
+      margin-right: auto;
+      left: 0;
+    }
+
     .menu__item {
       display: flex;
       text-decoration: none;
@@ -109,9 +116,6 @@
     .header__panel {
       justify-content: center;
 
-      .header__menu {
-        justify-content: right;
-      }
       .header__logo {
         position: fixed;
         top: 0;
@@ -122,9 +126,6 @@
 
 @media only screen and (max-width: 788px) {
 
-  .header__menu{
-    margin-left: 0;
-  }
 .menu__item-cart--icon {
     padding: 0 10px;
   }
