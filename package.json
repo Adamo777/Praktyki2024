@@ -1,5 +1,11 @@
 {
+  "scripts": {
+    "watch:sass": "sass sass/header-style.scss css/header-style.css -w && sass sass/nav-style.scss css/nav-style.css -w && sass sass/section-style.scss css/section-style.css -w"
+  },
   "dependencies": {
-    "sass": "^1.79.4"
+    "sass": "^1.79.5"
+  },
+  "devDependencies": {
+    "node-sass": "^9.0.0"
   }
 }
