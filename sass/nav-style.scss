@@ -1,16 +1,13 @@
+.nav{
+
+    padding: 22px 30px;
 
 
-  .nav{
-
-    padding: 22px 0;
-
-    
     .nav__list--ul-visible {
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       list-style: none;
       padding: 0px;
-      gap: 50px;
       text-align: center;
       
       .nav__list--li-visible a {
@@ -38,15 +35,6 @@
         display: inline;
       }
     }
-
-
-.visible {
-  display: flex;
-  flex-direction: column;
-  height: 500px;
-  justify-content: center;
-  text-align: center;
-}
 
 .unvisible{
   display: none;

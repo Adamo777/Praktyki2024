@@ -1,9 +1,10 @@
 (function () {
-  const div = document.querySelector(".header__panel--nav-swipe");
+  const navSwipeBtn = document.querySelector(".nav__swipe-btn");
+  const navSwipeBtnIcon = document.querySelector(".nav__swipe-btn");
   const unvisibleList = document.querySelector(".nav__list--ul-unvisible");
 
-  div.addEventListener("click", () => {
-    div.classList.toggle('visible')
+  navSwipeBtn.addEventListener("click", () => {
+    navSwipeBtn.classList.toggle('visible')
   });
 
   unvisibleList.addEventListener("click", () =>{
