@@ -1,3 +1,5 @@
+"use strict";
+
 (function () {
   const navSwipeBtn = document.querySelector(".nav__swipe-btn");
   const navSwipeBtnIcon = document.querySelector(".nav__swipe-btn");

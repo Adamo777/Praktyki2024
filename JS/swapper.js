@@ -1,6 +1,6 @@
-(function() {
+"use strict";
 
-  const swapper = () => {
+(function() {
     const firstSlide = document.querySelector(".section__first-slide");
     const secondSlide = document.querySelector(".section__second-slide");
 
@@ -15,7 +15,7 @@
     })
 
 
-  };
+
     
-  swapper();
+ 
 })();

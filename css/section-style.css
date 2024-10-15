@@ -1,162 +1,135 @@
-body {
-  width: auto;
-}
-
 section {
   justify-content: center;
   background: #f2f3f4;
   padding: 20px 30px;
 }
 section .section__first-slide {
-  width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  padding: 20px 30px;
-}
-section .section__first-slide .section__first-slide--img {
   position: relative;
-  height: 595px;
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-size: cover;
-  cursor: pointer;
 }
-section .section__first-slide .section__first-slide--img .section__slide--btn-left {
-  width: 50px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+section .section__first-slide .section__slide--btn-left {
   position: absolute;
-  background-color: white;
-  left: 0px;
-  top: 50%;
-  transform: translateY(-50%);
-  opacity: 50%;
-}
-section .section__first-slide .section__first-slide--img .section__slide--btn-right {
-  width: 50px;
-  height: 50px;
   display: flex;
-  align-items: center;
   justify-content: center;
-  position: absolute;
-  background-color: white;
-  right: 0px;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  left: 0;
   top: 50%;
-  transform: translateY(-50%);
   opacity: 50%;
+  background-color: white;
+  transform: translateY(-50%);
 }
-section .section__first-slide .section__first-slide--img .section__slide--text {
+section .section__first-slide .section__slide--btn-right {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  right: 0;
+  top: 50%;
+  opacity: 50%;
+  background-color: white;
+  transform: translateY(-50%);
+}
+section .section__first-slide .section__slide--text {
   position: absolute;
   top: 28%;
   left: 7%;
   color: white;
 }
-section .section__first-slide .section__first-slide--img .section__slide--text .section__slide--text-large {
-  margin-top: 0px;
+section .section__first-slide .section__slide--text .section__slide--text-large {
   font-family: Metropolis-bold;
-  font-size: 44px;
+  font-size: 2.5vw;
+  margin-top: 0px;
   margin-bottom: 0;
 }
-section .section__first-slide .section__first-slide--img .section__slide--text .section__slide--text-medium {
-  margin-top: 6px;
+section .section__first-slide .section__slide--text .section__slide--text-medium {
   font-family: Metropolis-light;
-  font-size: 44px;
-  margin-bottom: 19px;
+  font-size: 2.5vw;
+  margin-top: 6px;
+  margin-bottom: 1.1vh;
 }
-section .section__first-slide .section__first-slide--img .section__slide--text .section__slide--text-small {
-  margin-top: 0;
+section .section__first-slide .section__slide--text .section__slide--text-small {
   font-family: Metropolis-regular;
-  font-size: 22px;
-  margin-bottom: 36px;
+  font-size: 1.25vw;
+  margin-top: 0;
+  margin-bottom: 2vh;
 }
-section .section__first-slide .section__first-slide--img .section__slide--text .section__slide--btn-show-more {
+section .section__first-slide .section__slide--text .section__slide--btn-show-more {
   margin-top: 0px;
   background-color: #f74137;
   border: none;
-  width: 204px;
-  height: 55px;
+  width: 10.5vw;
+  height: 42px;
   font-family: Metropolis-bold;
   color: #ffffff;
   text-transform: uppercase;
   cursor: pointer;
 }
 section .section__second-slide {
-  width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: center;
-}
-section .section__second-slide .section__second-slide--img {
   position: relative;
-  height: 595px;
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-size: cover;
-  cursor: pointer;
 }
-section .section__second-slide .section__second-slide--img .section__slide--btn-left {
-  width: 50px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+section .section__second-slide .section__slide--btn-left {
   position: absolute;
-  background-color: white;
-  left: 0px;
-  top: 50%;
-  transform: translateY(-50%);
-  opacity: 50%;
-}
-section .section__second-slide .section__second-slide--img .section__slide--btn-right {
-  width: 50px;
-  height: 50px;
   display: flex;
-  align-items: center;
   justify-content: center;
-  position: absolute;
-  background-color: white;
-  right: 0px;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  left: 0;
   top: 50%;
-  transform: translateY(-50%);
   opacity: 50%;
+  background-color: white;
+  transform: translateY(-50%);
 }
-section .section__second-slide .section__second-slide--img .section__slide--text {
+section .section__second-slide .section__slide--btn-right {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  right: 0;
+  top: 50%;
+  opacity: 50%;
+  background-color: white;
+  transform: translateY(-50%);
+}
+section .section__second-slide .section__slide--text {
   position: absolute;
   top: 28%;
   left: 7%;
   color: white;
 }
-section .section__second-slide .section__second-slide--img .section__slide--text .section__slide--text-large {
-  margin-top: 0px;
+section .section__second-slide .section__slide--text .section__slide--text-large {
   font-family: Metropolis-bold;
-  font-size: 44px;
+  font-size: 2.5vw;
+  margin-top: 0px;
   margin-bottom: 0;
 }
-section .section__second-slide .section__second-slide--img .section__slide--text .section__slide--text-medium {
-  margin-top: 6px;
+section .section__second-slide .section__slide--text .section__slide--text-medium {
   font-family: Metropolis-light;
-  font-size: 44px;
-  margin-bottom: 19px;
+  font-size: 2.5vw;
+  margin-top: 6px;
+  margin-bottom: 1.1vh;
 }
-section .section__second-slide .section__second-slide--img .section__slide--text .section__slide--text-small {
-  margin-top: 0;
+section .section__second-slide .section__slide--text .section__slide--text-small {
   font-family: Metropolis-regular;
-  font-size: 22px;
-  margin-bottom: 36px;
+  font-size: 1.25vw;
+  margin-top: 0;
+  margin-bottom: 2vh;
 }
-section .section__second-slide .section__second-slide--img .section__slide--text .section__slide--btn-show-more {
+section .section__second-slide .section__slide--text .section__slide--btn-show-more {
   margin-top: 0px;
   background-color: #f74137;
   border: none;
-  width: 204px;
-  height: 55px;
+  width: 10.5vw;
+  height: 42px;
   font-family: Metropolis-bold;
   color: #ffffff;
   text-transform: uppercase;
