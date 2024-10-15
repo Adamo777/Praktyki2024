@@ -3,6 +3,21 @@
 * {
   margin: 0;
 }
+
+
+.nav__swipe-btn{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 50%;
+  left: -3px;
+  transform: translateY(-50%);
+  height: 120px;
+  width: 20px;
+  background-color: $primary-grey;
+  border-radius: 6px;
+}
+
 .header__panel {
   display: flex;
   flex-direction: row;
@@ -17,13 +32,6 @@
   .header__menu {
     display: flex;
     margin-left: auto;
-
-
-    .header__panel--nav-swipe{
-      font-size: 30px;
-      margin-right: auto;
-      left: 0;
-    }
 
     .menu__item {
       display: flex;
@@ -112,6 +120,9 @@
     position: absolute;
     bottom: 0;
     border-top: 1px solid $primary-grey;
+    .nav{
+      display: none;
+    }
 
     .header__panel {
       justify-content: center;

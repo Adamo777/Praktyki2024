@@ -1,11 +1,15 @@
 {
   "scripts": {
-    "watch:sass": "sass sass/header-style.scss css/header-style.css -w && sass sass/nav-style.scss css/nav-style.css -w && sass sass/section-style.scss css/section-style.css -w"
+    "watch:sass": "npm-run-all --parallel watch:sass:header watch:sass:nav watch:sass:section",
+    "watch:sass:header": "sass sass/header-style.scss css/header-style.css -w",
+    "watch:sass:nav": "sass sass/nav-style.scss css/nav-style.css -w",
+    "watch:sass:section": "sass sass/section-style.scss css/section-style.css -w"
   },
   "dependencies": {
     "sass": "^1.79.5"
   },
   "devDependencies": {
-    "node-sass": "^9.0.0"
+    "node-sass": "^9.0.0",
+    "npm-run-all": "^4.1.5"
   }
 }

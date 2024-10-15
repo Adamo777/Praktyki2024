@@ -1,235 +1,274 @@
 body {
-  width: auto; }
+  width: auto;
+}
 
 section {
   justify-content: center;
   background: #f2f3f4;
-  padding: 20px 30px; }
-  section .section__first-slide {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center; }
-    section .section__first-slide .section__first-slide--img {
-      position: relative;
-      height: 595px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      background-size: cover;
-      cursor: pointer; }
-      section .section__first-slide .section__first-slide--img .section__slide--btn-left {
-        width: 50px;
-        height: 50px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: absolute;
-        background-color: white;
-        left: 0px;
-        top: 50%;
-        transform: translateY(-50%);
-        opacity: 50%; }
-      section .section__first-slide .section__first-slide--img .section__slide--btn-right {
-        width: 50px;
-        height: 50px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: absolute;
-        background-color: white;
-        right: 0px;
-        top: 50%;
-        transform: translateY(-50%);
-        opacity: 50%; }
-      section .section__first-slide .section__first-slide--img .section__slide--text {
-        position: absolute;
-        top: 28%;
-        left: 7%;
-        color: white; }
-        section .section__first-slide .section__first-slide--img .section__slide--text .section__slide--text-large {
-          margin-top: 0px;
-          font-family: Metropolis-bold;
-          font-size: 44px;
-          margin-bottom: 0; }
-        section .section__first-slide .section__first-slide--img .section__slide--text .section__slide--text-medium {
-          margin-top: 6px;
-          font-family: Metropolis-light;
-          font-size: 44px;
-          margin-bottom: 19px; }
-        section .section__first-slide .section__first-slide--img .section__slide--text .section__slide--text-small {
-          margin-top: 0;
-          font-family: Metropolis-regular;
-          font-size: 22px;
-          margin-bottom: 36px; }
-        section .section__first-slide .section__first-slide--img .section__slide--text .section__slide--btn-show-more {
-          margin-top: 0px;
-          background-color: #f74137;
-          border: none;
-          width: 204px;
-          height: 55px;
-          font-family: Metropolis-bold;
-          color: #ffffff;
-          text-transform: uppercase;
-          cursor: pointer; }
-  section .section__second-slide {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center; }
-    section .section__second-slide .section__second-slide--img {
-      position: relative;
-      height: 595px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      background-size: cover;
-      cursor: pointer; }
-      section .section__second-slide .section__second-slide--img .section__slide--btn-left {
-        width: 50px;
-        height: 50px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: absolute;
-        background-color: white;
-        left: 0px;
-        top: 50%;
-        transform: translateY(-50%);
-        opacity: 50%; }
-      section .section__second-slide .section__second-slide--img .section__slide--btn-right {
-        width: 50px;
-        height: 50px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: absolute;
-        background-color: white;
-        right: 0px;
-        top: 50%;
-        transform: translateY(-50%);
-        opacity: 50%; }
-      section .section__second-slide .section__second-slide--img .section__slide--text {
-        position: absolute;
-        top: 28%;
-        left: 7%;
-        color: white; }
-        section .section__second-slide .section__second-slide--img .section__slide--text .section__slide--text-large {
-          margin-top: 0px;
-          font-family: Metropolis-bold;
-          font-size: 44px;
-          margin-bottom: 0; }
-        section .section__second-slide .section__second-slide--img .section__slide--text .section__slide--text-medium {
-          margin-top: 6px;
-          font-family: Metropolis-light;
-          font-size: 44px;
-          margin-bottom: 19px; }
-        section .section__second-slide .section__second-slide--img .section__slide--text .section__slide--text-small {
-          margin-top: 0;
-          font-family: Metropolis-regular;
-          font-size: 22px;
-          margin-bottom: 36px; }
-        section .section__second-slide .section__second-slide--img .section__slide--text .section__slide--btn-show-more {
-          margin-top: 0px;
-          background-color: #f74137;
-          border: none;
-          width: 204px;
-          height: 55px;
-          font-family: Metropolis-bold;
-          color: #ffffff;
-          text-transform: uppercase;
-          cursor: pointer; }
-  section .unvisible-slide {
-    display: none; }
-  section .section_baners {
-    width: 100%;
-    display: flex; }
-    section .section_baners .section__first-baner-img img,
-    section .section_baners .section__second-baner-img img,
-    section .section_baners .section__third-baner-img img {
-      transition: 0.3s; }
-    section .section_baners .section__first-baner-img:hover img,
-    section .section_baners .section__second-baner-img:hover img,
-    section .section_baners .section__third-baner-img:hover img {
-      transform: scale(1.1); }
-    section .section_baners .section__baners--first-baner {
-      position: relative;
-      height: 400px;
-      width: 600px;
-      margin: 30px 30px 30px 0px;
-      overflow: hidden; }
-      section .section_baners .section__baners--first-baner .section__first-baner--text {
-        position: absolute;
-        top: 30%;
-        left: 8%;
-        font-family: Metropolis-bold;
-        color: white;
-        font-size: 44px; }
-        section .section_baners .section__baners--first-baner .section__first-baner--text .section__baner--btn-show-more {
-          height: 55px;
-          width: 204px;
-          margin-top: 0px;
-          color: #ffffff;
-          background-color: transparent;
-          border: 1px solid white;
-          font-family: Metropolis-bold;
-          text-transform: uppercase;
-          cursor: pointer; }
-    section .section_baners .section__baners--second-baner {
-      position: relative;
-      height: 400px;
-      width: 600px;
-      margin: auto;
-      overflow: hidden; }
-      section .section_baners .section__baners--second-baner .section__second-baner--text {
-        position: absolute;
-        top: 30%;
-        left: 8%;
-        font-family: Metropolis-bold;
-        color: white;
-        font-size: 44px; }
-        section .section_baners .section__baners--second-baner .section__second-baner--text .section__baner--btn-show-more {
-          height: 55px;
-          width: 204px;
-          margin-top: 0px;
-          color: #ffffff;
-          background-color: transparent;
-          border: 1px solid white;
-          font-family: Metropolis-bold;
-          text-transform: uppercase;
-          cursor: pointer; }
-    section .section_baners .section__baners--third-baner {
-      position: relative;
-      height: 400px;
-      width: 600px;
-      margin: 30px 0px 30px 30px;
-      overflow: hidden; }
-      section .section_baners .section__baners--third-baner .section__third-baner--text {
-        position: absolute;
-        top: 30%;
-        left: 8%;
-        font-family: Metropolis-bold;
-        color: white;
-        font-size: 44px;
-        background-color: 1; }
-        section .section_baners .section__baners--third-baner .section__third-baner--text .section__baner--btn-show-more {
-          height: 55px;
-          width: 204px;
-          margin-top: 0px;
-          color: #ffffff;
-          background-color: transparent;
-          border: 1px solid white;
-          font-family: Metropolis-bold;
-          text-transform: uppercase;
-          cursor: pointer; }
+  padding: 20px 30px;
+}
+section .section__first-slide {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+section .section__first-slide .section__first-slide--img {
+  position: relative;
+  height: 595px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  cursor: pointer;
+}
+section .section__first-slide .section__first-slide--img .section__slide--btn-left {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  background-color: white;
+  left: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 50%;
+}
+section .section__first-slide .section__first-slide--img .section__slide--btn-right {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  background-color: white;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 50%;
+}
+section .section__first-slide .section__first-slide--img .section__slide--text {
+  position: absolute;
+  top: 28%;
+  left: 7%;
+  color: white;
+}
+section .section__first-slide .section__first-slide--img .section__slide--text .section__slide--text-large {
+  margin-top: 0px;
+  font-family: Metropolis-bold;
+  font-size: 44px;
+  margin-bottom: 0;
+}
+section .section__first-slide .section__first-slide--img .section__slide--text .section__slide--text-medium {
+  margin-top: 6px;
+  font-family: Metropolis-light;
+  font-size: 44px;
+  margin-bottom: 19px;
+}
+section .section__first-slide .section__first-slide--img .section__slide--text .section__slide--text-small {
+  margin-top: 0;
+  font-family: Metropolis-regular;
+  font-size: 22px;
+  margin-bottom: 36px;
+}
+section .section__first-slide .section__first-slide--img .section__slide--text .section__slide--btn-show-more {
+  margin-top: 0px;
+  background-color: #f74137;
+  border: none;
+  width: 204px;
+  height: 55px;
+  font-family: Metropolis-bold;
+  color: #ffffff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+section .section__second-slide {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+section .section__second-slide .section__second-slide--img {
+  position: relative;
+  height: 595px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  cursor: pointer;
+}
+section .section__second-slide .section__second-slide--img .section__slide--btn-left {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  background-color: white;
+  left: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 50%;
+}
+section .section__second-slide .section__second-slide--img .section__slide--btn-right {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  background-color: white;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 50%;
+}
+section .section__second-slide .section__second-slide--img .section__slide--text {
+  position: absolute;
+  top: 28%;
+  left: 7%;
+  color: white;
+}
+section .section__second-slide .section__second-slide--img .section__slide--text .section__slide--text-large {
+  margin-top: 0px;
+  font-family: Metropolis-bold;
+  font-size: 44px;
+  margin-bottom: 0;
+}
+section .section__second-slide .section__second-slide--img .section__slide--text .section__slide--text-medium {
+  margin-top: 6px;
+  font-family: Metropolis-light;
+  font-size: 44px;
+  margin-bottom: 19px;
+}
+section .section__second-slide .section__second-slide--img .section__slide--text .section__slide--text-small {
+  margin-top: 0;
+  font-family: Metropolis-regular;
+  font-size: 22px;
+  margin-bottom: 36px;
+}
+section .section__second-slide .section__second-slide--img .section__slide--text .section__slide--btn-show-more {
+  margin-top: 0px;
+  background-color: #f74137;
+  border: none;
+  width: 204px;
+  height: 55px;
+  font-family: Metropolis-bold;
+  color: #ffffff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+section .unvisible-slide {
+  display: none;
+}
+section .section_baners {
+  width: 100%;
+  display: flex;
+}
+section .section_baners .section__first-baner-img img,
+section .section_baners .section__second-baner-img img,
+section .section_baners .section__third-baner-img img {
+  transition: 0.3s;
+}
+section .section_baners .section__first-baner-img:hover img,
+section .section_baners .section__second-baner-img:hover img,
+section .section_baners .section__third-baner-img:hover img {
+  transform: scale(1.1);
+}
+section .section_baners .section__baners--first-baner {
+  position: relative;
+  height: 400px;
+  width: 600px;
+  margin: 30px 30px 30px 0px;
+  overflow: hidden;
+}
+section .section_baners .section__baners--first-baner .section__first-baner--text {
+  position: absolute;
+  top: 30%;
+  left: 8%;
+  font-family: Metropolis-bold;
+  color: white;
+  font-size: 44px;
+}
+section .section_baners .section__baners--first-baner .section__first-baner--text .section__baner--btn-show-more {
+  height: 55px;
+  width: 204px;
+  margin-top: 0px;
+  color: #ffffff;
+  background-color: transparent;
+  border: 1px solid white;
+  font-family: Metropolis-bold;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+section .section_baners .section__baners--second-baner {
+  position: relative;
+  height: 400px;
+  width: 600px;
+  margin: auto;
+  overflow: hidden;
+}
+section .section_baners .section__baners--second-baner .section__second-baner--text {
+  position: absolute;
+  top: 30%;
+  left: 8%;
+  font-family: Metropolis-bold;
+  color: white;
+  font-size: 44px;
+}
+section .section_baners .section__baners--second-baner .section__second-baner--text .section__baner--btn-show-more {
+  height: 55px;
+  width: 204px;
+  margin-top: 0px;
+  color: #ffffff;
+  background-color: transparent;
+  border: 1px solid white;
+  font-family: Metropolis-bold;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+section .section_baners .section__baners--third-baner {
+  position: relative;
+  height: 400px;
+  width: 600px;
+  margin: 30px 0px 30px 30px;
+  overflow: hidden;
+}
+section .section_baners .section__baners--third-baner .section__third-baner--text {
+  position: absolute;
+  top: 30%;
+  left: 8%;
+  font-family: Metropolis-bold;
+  color: white;
+  font-size: 44px;
+  background-color: 1;
+}
+section .section_baners .section__baners--third-baner .section__third-baner--text .section__baner--btn-show-more {
+  height: 55px;
+  width: 204px;
+  margin-top: 0px;
+  color: #ffffff;
+  background-color: transparent;
+  border: 1px solid white;
+  font-family: Metropolis-bold;
+  text-transform: uppercase;
+  cursor: pointer;
+}
 
 .section__baners {
-  flex-direction: column; }
-  .section__baners .section__baners--first-baner {
-    margin: 0; }
-  .section__baners .section__baners--second-baner {
-    margin: 0; }
-  .section__baners .section__baners--thirde-baner {
-    margin: 0; }
+  flex-direction: column;
+}
+.section__baners .section__baners--first-baner {
+  margin: 0;
+}
+.section__baners .section__baners--second-baner {
+  margin: 0;
+}
+.section__baners .section__baners--thirde-baner {
+  margin: 0;
+}
+
+/*# sourceMappingURL=section-style.css.map */
