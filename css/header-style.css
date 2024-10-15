@@ -13,6 +13,26 @@
   width: 20px;
   background-color: #E1E2E8;
   border-radius: 6px;
+  display: none;
+}
+
+.nav__list--ul-unvisible {
+  list-style: none;
+  padding: 30px;
+  text-align: center;
+}
+
+.nav__list--ul-unvisible a {
+  text-decoration: none;
+  color: #000;
+  font-family: Metropolis-bold;
+  text-transform: uppercase;
+  line-height: 3;
+}
+
+.visible-list {
+  width: auto;
+  height: auto;
 }
 
 .header__panel {
@@ -105,6 +125,9 @@
   }
   header .nav {
     display: none;
+  }
+  header .nav__swipe-btn {
+    display: block;
   }
   header .header__panel {
     justify-content: center;

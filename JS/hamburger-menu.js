@@ -1,13 +1,13 @@
 (function () {
   const navSwipeBtn = document.querySelector(".nav__swipe-btn");
   const navSwipeBtnIcon = document.querySelector(".nav__swipe-btn");
-  const unvisibleList = document.querySelector(".nav__list--ul-unvisible");
+  const unvisibleList = document.querySelector(".nav__list--li-unvisible");
 
-  navSwipeBtn.addEventListener("click", () => {
-    navSwipeBtn.classList.toggle('visible')
+  navSwipeBtnIcon.addEventListener("click", () => {
+    navSwipeBtn.classList.toggle('visible-list')
   });
 
-  unvisibleList.addEventListener("click", () =>{
+  navSwipeBtn.addEventListener("click", () =>{
     unvisibleList.classList.toggle('unvisible')
   });
 

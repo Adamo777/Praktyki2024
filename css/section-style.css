@@ -12,6 +12,7 @@ section .section__first-slide {
   height: auto;
   display: flex;
   justify-content: center;
+  padding: 20px 30px;
 }
 section .section__first-slide .section__first-slide--img {
   position: relative;
