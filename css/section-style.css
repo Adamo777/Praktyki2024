@@ -1,5 +1,4 @@
 section {
-  justify-content: center;
   background: #f2f3f4;
   padding: 20px 30px;
 }
@@ -13,26 +12,28 @@ section .section__first-slide .section__slide--btn-left {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50px;
-  width: 50px;
+  height: 3vw;
+  width: 3vw;
   left: 0;
   top: 50%;
   opacity: 50%;
   background-color: white;
   transform: translateY(-50%);
+  font-size: 0.9vw;
 }
 section .section__first-slide .section__slide--btn-right {
   position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50px;
-  width: 50px;
+  height: 3vw;
+  width: 3vw;
   right: 0;
   top: 50%;
   opacity: 50%;
   background-color: white;
   transform: translateY(-50%);
+  font-size: 0.9vw;
 }
 section .section__first-slide .section__slide--text {
   position: absolute;
@@ -43,29 +44,28 @@ section .section__first-slide .section__slide--text {
 section .section__first-slide .section__slide--text .section__slide--text-large {
   font-family: Metropolis-bold;
   font-size: 2.5vw;
-  margin-top: 0px;
   margin-bottom: 0;
 }
 section .section__first-slide .section__slide--text .section__slide--text-medium {
   font-family: Metropolis-light;
   font-size: 2.5vw;
-  margin-top: 6px;
-  margin-bottom: 1.1vh;
+  margin-top: 0.3vw;
+  margin-bottom: 0.6vw;
 }
 section .section__first-slide .section__slide--text .section__slide--text-small {
   font-family: Metropolis-regular;
   font-size: 1.25vw;
   margin-top: 0;
-  margin-bottom: 2vh;
+  margin-bottom: 1vw;
 }
 section .section__first-slide .section__slide--text .section__slide--btn-show-more {
-  margin-top: 0px;
-  background-color: #f74137;
-  border: none;
-  width: 10.5vw;
-  height: 42px;
   font-family: Metropolis-bold;
+  font-size: 0.8vw;
   color: #ffffff;
+  background-color: #f74137;
+  width: 12.5vw;
+  height: 3vw;
+  border: none;
   text-transform: uppercase;
   cursor: pointer;
 }
@@ -79,26 +79,28 @@ section .section__second-slide .section__slide--btn-left {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50px;
-  width: 50px;
+  height: 3vw;
+  width: 3vw;
   left: 0;
   top: 50%;
   opacity: 50%;
   background-color: white;
   transform: translateY(-50%);
+  font-size: 0.9vw;
 }
 section .section__second-slide .section__slide--btn-right {
   position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50px;
-  width: 50px;
+  height: 3vw;
+  width: 3vw;
   right: 0;
   top: 50%;
   opacity: 50%;
   background-color: white;
   transform: translateY(-50%);
+  font-size: 0.9vw;
 }
 section .section__second-slide .section__slide--text {
   position: absolute;
@@ -109,29 +111,28 @@ section .section__second-slide .section__slide--text {
 section .section__second-slide .section__slide--text .section__slide--text-large {
   font-family: Metropolis-bold;
   font-size: 2.5vw;
-  margin-top: 0px;
   margin-bottom: 0;
 }
 section .section__second-slide .section__slide--text .section__slide--text-medium {
   font-family: Metropolis-light;
   font-size: 2.5vw;
-  margin-top: 6px;
-  margin-bottom: 1.1vh;
+  margin-top: 0.3vw;
+  margin-bottom: 0.6vw;
 }
 section .section__second-slide .section__slide--text .section__slide--text-small {
   font-family: Metropolis-regular;
   font-size: 1.25vw;
   margin-top: 0;
-  margin-bottom: 2vh;
+  margin-bottom: 1vw;
 }
 section .section__second-slide .section__slide--text .section__slide--btn-show-more {
-  margin-top: 0px;
-  background-color: #f74137;
-  border: none;
-  width: 10.5vw;
-  height: 42px;
   font-family: Metropolis-bold;
-  color: #ffffff;
+  font-size: 0.8vw;
+  color: white;
+  background-color: #f74137;
+  width: 12.5vw;
+  height: 3vw;
+  border: none;
   text-transform: uppercase;
   cursor: pointer;
 }
@@ -142,36 +143,35 @@ section .section_baners {
   width: 100%;
   display: flex;
 }
-section .section_baners .section__first-baner-img img,
-section .section_baners .section__second-baner-img img,
-section .section_baners .section__third-baner-img img {
-  transition: 0.3s;
-}
-section .section_baners .section__first-baner-img:hover img,
-section .section_baners .section__second-baner-img:hover img,
-section .section_baners .section__third-baner-img:hover img {
-  transform: scale(1.1);
-}
 section .section_baners .section__baners--first-baner {
   position: relative;
-  height: 400px;
-  width: 600px;
-  margin: 30px 30px 30px 0px;
-  overflow: hidden;
+  height: auto;
+  width: 33%;
+  padding: 20px 30px 20px 0;
 }
 section .section_baners .section__baners--first-baner .section__first-baner--text {
   position: absolute;
   top: 30%;
   left: 8%;
-  font-family: Metropolis-bold;
   color: white;
+  text-align: left;
+}
+section .section_baners .section__baners--first-baner .section__first-baner--text .section__baner--text-large {
+  font-family: Metropolis-bold;
   font-size: 44px;
+  margin-bottom: 0;
+}
+section .section_baners .section__baners--first-baner .section__first-baner--text .section__baner--text-medium {
+  font-family: Metropolis-light;
+  font-size: 44px;
+  margin-top: 0.2vw;
+  margin-bottom: 1vw;
 }
 section .section_baners .section__baners--first-baner .section__first-baner--text .section__baner--btn-show-more {
   height: 55px;
   width: 204px;
   margin-top: 0px;
-  color: #ffffff;
+  color: white;
   background-color: transparent;
   border: 1px solid white;
   font-family: Metropolis-bold;
@@ -180,24 +180,33 @@ section .section_baners .section__baners--first-baner .section__first-baner--tex
 }
 section .section_baners .section__baners--second-baner {
   position: relative;
-  height: 400px;
-  width: 600px;
-  margin: auto;
-  overflow: hidden;
+  height: auto;
+  width: 33%;
+  padding: 20px 0;
 }
 section .section_baners .section__baners--second-baner .section__second-baner--text {
   position: absolute;
   top: 30%;
   left: 8%;
-  font-family: Metropolis-bold;
   color: white;
+  text-align: left;
+}
+section .section_baners .section__baners--second-baner .section__second-baner--text .section__baner--text-large {
+  font-family: Metropolis-bold;
   font-size: 44px;
+  margin-bottom: 0;
+}
+section .section_baners .section__baners--second-baner .section__second-baner--text .section__baner--text-medium {
+  font-family: Metropolis-light;
+  font-size: 44px;
+  margin-top: 0.2vw;
+  margin-bottom: 1vw;
 }
 section .section_baners .section__baners--second-baner .section__second-baner--text .section__baner--btn-show-more {
   height: 55px;
   width: 204px;
   margin-top: 0px;
-  color: #ffffff;
+  color: white;
   background-color: transparent;
   border: 1px solid white;
   font-family: Metropolis-bold;
@@ -206,25 +215,33 @@ section .section_baners .section__baners--second-baner .section__second-baner--t
 }
 section .section_baners .section__baners--third-baner {
   position: relative;
-  height: 400px;
-  width: 600px;
-  margin: 30px 0px 30px 30px;
-  overflow: hidden;
+  height: auto;
+  width: 33%;
+  padding: 20px 0 20px 30px;
 }
 section .section_baners .section__baners--third-baner .section__third-baner--text {
   position: absolute;
   top: 30%;
   left: 8%;
-  font-family: Metropolis-bold;
   color: white;
+  text-align: left;
+}
+section .section_baners .section__baners--third-baner .section__third-baner--text .section__baner--text-large {
+  font-family: Metropolis-bold;
   font-size: 44px;
-  background-color: 1;
+  margin-bottom: 0;
+}
+section .section_baners .section__baners--third-baner .section__third-baner--text .section__baner--text-medium {
+  font-family: Metropolis-light;
+  font-size: 44px;
+  margin-top: 0.2vw;
+  margin-bottom: 1vw;
 }
 section .section_baners .section__baners--third-baner .section__third-baner--text .section__baner--btn-show-more {
   height: 55px;
   width: 204px;
   margin-top: 0px;
-  color: #ffffff;
+  color: white;
   background-color: transparent;
   border: 1px solid white;
   font-family: Metropolis-bold;
@@ -243,6 +260,13 @@ section .section_baners .section__baners--third-baner .section__third-baner--tex
 }
 .section__baners .section__baners--thirde-baner {
   margin: 0;
+}
+
+@media only screen and (max-width: 920px) {
+  section {
+    padding-top: 90px;
+    justify-content: center;
+  }
 }
 
 /*# sourceMappingURL=section-style.css.map */

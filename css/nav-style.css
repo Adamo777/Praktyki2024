@@ -5,7 +5,7 @@
   display: flex;
   justify-content: space-between;
   list-style: none;
-  padding: 0px;
+  padding: 0;
   text-align: center;
 }
 .nav .nav__list--ul-visible .nav__list--li-visible a {

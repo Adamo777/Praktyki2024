@@ -1,5 +1,6 @@
 * {
   margin: 0;
+  padding: 0;
 }
 
 .nav__swipe-btn {
@@ -91,6 +92,7 @@
   padding: 0 20px;
   font-family: Metropolis-bold;
   text-transform: uppercase;
+  margin: 0;
 }
 .header__panel .header__menu .menu__item-cart .menu__item-cart--info p:last-child {
   font-family: Metropolis-light;
@@ -132,9 +134,12 @@
   header .header__panel {
     justify-content: center;
   }
+  header .header__panel .header__menu {
+    margin-left: unset;
+  }
   header .header__panel .header__logo {
     position: fixed;
-    top: 0;
+    top: 10px;
   }
 }
 @media only screen and (max-width: 788px) {

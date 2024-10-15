@@ -1,10 +1,6 @@
-// * {
-//   margin: 0;
-//   padding: 0;
-// }
+@use "variables";
 
 section {
-  justify-content: center;
   background: #f2f3f4;
   padding: 20px 30px;
 
@@ -20,13 +16,14 @@ section {
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 50px;
-      width: 50px;
+      height: 3vw;
+      width: 3vw;
       left: 0;
       top: 50%;
       opacity: 50%;
       background-color: white;
       transform: translateY(-50%);
+      font-size: 0.9vw;
     }
 
     .section__slide--btn-right {
@@ -34,13 +31,14 @@ section {
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 50px;
-      width: 50px;
+      height: 3vw;
+      width: 3vw;
       right: 0;
       top: 50%;
       opacity: 50%;
       background-color: white;
       transform: translateY(-50%);
+      font-size: 0.9vw;
     }
     .section__slide--text {
       position: absolute;
@@ -51,32 +49,31 @@ section {
       .section__slide--text-large {
         font-family: Metropolis-bold;
         font-size: 2.5vw;
-        margin-top: 0px;
         margin-bottom: 0;
       }
 
       .section__slide--text-medium {
         font-family: Metropolis-light;
         font-size: 2.5vw;
-        margin-top: 6px;
-        margin-bottom: 1.1vh;
+        margin-top: 0.3vw;
+        margin-bottom: 0.6vw;
       }
 
       .section__slide--text-small {
         font-family: Metropolis-regular;
         font-size: 1.25vw;
         margin-top: 0;
-        margin-bottom: 2vh;
+        margin-bottom: 1vw;
       }
 
       .section__slide--btn-show-more {
-        margin-top: 0px;
-        background-color: #f74137;
-        border: none;
-        width: 10.5vw;
-        height: 42px;
         font-family: Metropolis-bold;
+        font-size: 0.8vw;
         color: #ffffff;
+        background-color: variables.$primary-red;
+        width: 12.5vw;
+        height: 3vw;
+        border: none;
         text-transform: uppercase;
         cursor: pointer;
       }
@@ -95,13 +92,14 @@ section {
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 50px;
-      width: 50px;
+      height: 3vw;
+      width: 3vw;
       left: 0;
       top: 50%;
       opacity: 50%;
       background-color: white;
       transform: translateY(-50%);
+      font-size: 0.9vw;
     }
 
     .section__slide--btn-right {
@@ -109,13 +107,14 @@ section {
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 50px;
-      width: 50px;
+      height: 3vw;
+      width: 3vw;
       right: 0;
       top: 50%;
       opacity: 50%;
       background-color: white;
       transform: translateY(-50%);
+      font-size: 0.9vw;
     }
     .section__slide--text {
       position: absolute;
@@ -126,32 +125,31 @@ section {
       .section__slide--text-large {
         font-family: Metropolis-bold;
         font-size: 2.5vw;
-        margin-top: 0px;
         margin-bottom: 0;
       }
 
       .section__slide--text-medium {
         font-family: Metropolis-light;
         font-size: 2.5vw;
-        margin-top: 6px;
-        margin-bottom: 1.1vh;
+        margin-top: 0.3vw;
+        margin-bottom: 0.6vw;
       }
 
       .section__slide--text-small {
         font-family: Metropolis-regular;
         font-size: 1.25vw;
         margin-top: 0;
-        margin-bottom: 2vh;
+        margin-bottom: 1vw;
       }
 
       .section__slide--btn-show-more {
-        margin-top: 0px;
-        background-color: #f74137;
-        border: none;
-        width: 10.5vw;
-        height: 42px;
         font-family: Metropolis-bold;
-        color: #ffffff;
+        font-size: 0.8vw;
+        color: white;
+        background-color: variables.$primary-red;
+        width: 12.5vw;
+        height: 3vw;
+        border: none;
         text-transform: uppercase;
         cursor: pointer;
       }
@@ -170,38 +168,39 @@ section {
     width: 100%;
     display: flex;
 
-    .section__first-baner-img img,
-    .section__second-baner-img img,
-    .section__third-baner-img img {
-      transition: 0.3s;
-    }
-
-    .section__first-baner-img:hover img,
-    .section__second-baner-img:hover img,
-    .section__third-baner-img:hover img {
-      transform: scale(1.1);
-    }
+  // FIRST BANER
 
     .section__baners--first-baner {
       position: relative;
-      height: 400px;
-      width: 600px;
-      margin: 30px 30px 30px 0px;
-      overflow: hidden;
+      height: auto;
+      width: 33%;
+      padding: 20px 30px 20px 0;
 
       .section__first-baner--text {
         position: absolute;
         top: 30%;
         left: 8%;
-        font-family: Metropolis-bold;
         color: white;
-        font-size: 44px;
+        text-align: left;
+
+        .section__baner--text-large {
+          font-family: Metropolis-bold;
+          font-size: 44px;
+          margin-bottom: 0;
+        }
+
+        .section__baner--text-medium {
+          font-family: Metropolis-light;
+          font-size: 44px;
+          margin-top: 0.2vw;
+          margin-bottom: 1vw;
+        }
 
         .section__baner--btn-show-more {
           height: 55px;
           width: 204px;
           margin-top: 0px;
-          color: #ffffff;
+          color: white;
           background-color: transparent;
           border: 1px solid white;
           font-family: Metropolis-bold;
@@ -211,26 +210,39 @@ section {
       }
     }
 
+    // SECOND BANER
+
     .section__baners--second-baner {
       position: relative;
-      height: 400px;
-      width: 600px;
-      margin: auto;
-      overflow: hidden;
+      height: auto;
+      width: 33%;
+      padding: 20px 0;
 
       .section__second-baner--text {
         position: absolute;
         top: 30%;
         left: 8%;
-        font-family: Metropolis-bold;
         color: white;
-        font-size: 44px;
+        text-align: left;
+
+        .section__baner--text-large {
+          font-family: Metropolis-bold;
+          font-size: 44px;
+          margin-bottom: 0;
+        }
+
+        .section__baner--text-medium {
+          font-family: Metropolis-light;
+          font-size: 44px;
+          margin-top: 0.2vw;
+          margin-bottom: 1vw;
+        }
 
         .section__baner--btn-show-more {
           height: 55px;
           width: 204px;
           margin-top: 0px;
-          color: #ffffff;
+          color: white;
           background-color: transparent;
           border: 1px solid white;
           font-family: Metropolis-bold;
@@ -240,27 +252,39 @@ section {
       }
     }
 
+    // THIRD BANER
+
     .section__baners--third-baner {
       position: relative;
-      height: 400px;
-      width: 600px;
-      margin: 30px 0px 30px 30px;
-      overflow: hidden;
+      height: auto;
+      width: 33%;
+      padding: 20px 0 20px 30px;
 
       .section__third-baner--text {
         position: absolute;
         top: 30%;
         left: 8%;
-        font-family: Metropolis-bold;
         color: white;
-        font-size: 44px;
-        background-color: alpha($color: #000000);
+        text-align: left;
+
+        .section__baner--text-large {
+          font-family: Metropolis-bold;
+          font-size: 44px;
+          margin-bottom: 0;
+        }
+
+        .section__baner--text-medium {
+          font-family: Metropolis-light;
+          font-size: 44px;
+          margin-top: 0.2vw;
+          margin-bottom: 1vw;
+        }
 
         .section__baner--btn-show-more {
           height: 55px;
           width: 204px;
           margin-top: 0px;
-          color: #ffffff;
+          color: white;
           background-color: transparent;
           border: 1px solid white;
           font-family: Metropolis-bold;
@@ -271,6 +295,7 @@ section {
     }
   }
 }
+
 
 // SECTION MEDIA
 
@@ -290,6 +315,10 @@ section {
   }
 }
 @media only screen and (max-width: 920px) {
+  section {
+    padding-top: 90px;
+    justify-content: center;
+  }
 }
 @media only screen and (max-width: 788px) {
 }
