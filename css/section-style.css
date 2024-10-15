@@ -147,7 +147,7 @@ section .section_baners .section__baners--first-baner {
   position: relative;
   height: auto;
   width: 33%;
-  padding: 20px 30px 20px 0;
+  margin: 20px 30px 20px 0;
 }
 section .section_baners .section__baners--first-baner .section__first-baner--text {
   position: absolute;
@@ -182,7 +182,7 @@ section .section_baners .section__baners--second-baner {
   position: relative;
   height: auto;
   width: 33%;
-  padding: 20px 0;
+  margin: 20px 0;
 }
 section .section_baners .section__baners--second-baner .section__second-baner--text {
   position: absolute;
@@ -217,7 +217,7 @@ section .section_baners .section__baners--third-baner {
   position: relative;
   height: auto;
   width: 33%;
-  padding: 20px 0 20px 30px;
+  margin: 20px 0 20px 30px;
 }
 section .section_baners .section__baners--third-baner .section__third-baner--text {
   position: absolute;

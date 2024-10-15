@@ -168,13 +168,13 @@ section {
     width: 100%;
     display: flex;
 
-  // FIRST BANER
+    // FIRST BANER
 
     .section__baners--first-baner {
       position: relative;
       height: auto;
       width: 33%;
-      padding: 20px 30px 20px 0;
+      margin: 20px 30px 20px 0;
 
       .section__first-baner--text {
         position: absolute;
@@ -216,7 +216,7 @@ section {
       position: relative;
       height: auto;
       width: 33%;
-      padding: 20px 0;
+      margin: 20px 0;
 
       .section__second-baner--text {
         position: absolute;
@@ -258,7 +258,7 @@ section {
       position: relative;
       height: auto;
       width: 33%;
-      padding: 20px 0 20px 30px;
+      margin: 20px 0 20px 30px;
 
       .section__third-baner--text {
         position: absolute;
@@ -295,7 +295,6 @@ section {
     }
   }
 }
-
 
 // SECTION MEDIA
 
