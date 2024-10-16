@@ -44,16 +44,17 @@
 .header__panel {
   display: flex;
   flex-direction: row;
-  padding: 30px;
+  padding: 1.8vw;
   border-bottom: 1px solid variables.$primary-grey;
 
   .header__logo {
-    height: 60px;
-    width: 250px;
+    height: 1.8vw;
+    width: 7.4vw;
   }
 
   .header__menu {
     display: flex;
+    align-items: center;
     margin-left: auto;
 
     .menu__item {
@@ -63,22 +64,18 @@
       align-items: center;
 
       .menu__item--element {
-        margin-right: 82px;
-
-        .menu__item--element {
-          font-size: 30px;
-        }
+        margin-right: 4.6vw;
 
         .menu__element--icon-text {
           display: flex;
           align-items: center;
-          gap: 18px;
-          font-size: 14px;
+          gap: 0.9vw;
+          font-size: 0.8vw;
           text-transform: uppercase;
           font-family: Metropolis-bold;
 
           .icon {
-            font-size: 30px;
+            font-size: 1.6vw;
           }
         }
       }
@@ -88,24 +85,26 @@
       display: flex;
       border: 1px solid variables.$primary-grey;
       color: white;
+      height: 3.1vw;
 
       .menu__item-cart--icon {
-        padding-left: 10px;
-        gap: 15px;
-        font-size: 30px;
+        padding-left: 0.5vw;
+        gap: 0.8vw;
+        font-size: 1.5vw;
       }
 
       .menu__item-cart--icon::after {
         content: "|";
-        font-size: 35px;
+        font-size: 1.6vw;
         color: black;
       }
 
-      .menu__item-cart--info p {
-        padding: 0 20px;
+      .menu__item-cart--info {
+        padding: 0 1vw;
         font-family: Metropolis-bold;
         text-transform: uppercase;
         margin: 0;
+        font-size: 0.8vw;
       }
 
       .menu__item-cart--info p:last-child {
@@ -115,16 +114,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 54px;
-        width: 35px;
-        font-size: 10px;
+        height: 3vw;
+        width: 1.6vw;
+        font-size: 0.5vw;
         background-color: variables.$primary-green;
         border: 1px solid variables.$primary-green;
-
-        .menu__item-cart--green-icon i {
-          font-size: 10px;
-          color: white;
-        }
       }
     }
   }
@@ -136,6 +130,7 @@
   .menu__element--icon-text p {
     display: none;
   }
+
 }
 
 @media only screen and (max-width: 920px) {

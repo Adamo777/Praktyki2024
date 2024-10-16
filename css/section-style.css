@@ -1,26 +1,16 @@
 section {
   background: #f2f3f4;
-  padding: 20px 30px;
+  padding: 1.2vw 1.8vw;
+}
+section .section__slide-image {
+  width: 100%;
 }
 section .section__first-slide {
   position: relative;
   width: 100%;
   display: flex;
 }
-section .section__first-slide .section__slide--btn-left {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 3vw;
-  width: 3vw;
-  left: 0;
-  top: 50%;
-  opacity: 50%;
-  background-color: white;
-  transform: translateY(-50%);
-  font-size: 0.9vw;
-}
+section .section__first-slide .section__slide--btn-left,
 section .section__first-slide .section__slide--btn-right {
   position: absolute;
   display: flex;
@@ -28,12 +18,18 @@ section .section__first-slide .section__slide--btn-right {
   align-items: center;
   height: 3vw;
   width: 3vw;
-  right: 0;
-  top: 50%;
   opacity: 50%;
   background-color: white;
   transform: translateY(-50%);
   font-size: 0.9vw;
+}
+section .section__first-slide .section__slide--btn-left {
+  left: 0;
+  top: 50%;
+}
+section .section__first-slide .section__slide--btn-right {
+  right: 0;
+  top: 50%;
 }
 section .section__first-slide .section__slide--text {
   position: absolute;
@@ -74,20 +70,7 @@ section .section__second-slide {
   width: 100%;
   display: flex;
 }
-section .section__second-slide .section__slide--btn-left {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 3vw;
-  width: 3vw;
-  left: 0;
-  top: 50%;
-  opacity: 50%;
-  background-color: white;
-  transform: translateY(-50%);
-  font-size: 0.9vw;
-}
+section .section__second-slide .section__slide--btn-left,
 section .section__second-slide .section__slide--btn-right {
   position: absolute;
   display: flex;
@@ -95,12 +78,18 @@ section .section__second-slide .section__slide--btn-right {
   align-items: center;
   height: 3vw;
   width: 3vw;
-  right: 0;
-  top: 50%;
   opacity: 50%;
   background-color: white;
   transform: translateY(-50%);
   font-size: 0.9vw;
+}
+section .section__second-slide .section__slide--btn-left {
+  left: 0;
+  top: 50%;
+}
+section .section__second-slide .section__slide--btn-right {
+  right: 0;
+  top: 50%;
 }
 section .section__second-slide .section__slide--text {
   position: absolute;
@@ -143,11 +132,15 @@ section .section_baners {
   width: 100%;
   display: flex;
 }
+section .section_baners .section__baner-image {
+  width: 100%;
+  filter: brightness(0.7);
+}
 section .section_baners .section__baners--first-baner {
   position: relative;
   height: auto;
   width: 33%;
-  margin: 20px 30px 20px 0;
+  margin: 1.2vw 1.8vw 1.2vw 0;
 }
 section .section_baners .section__baners--first-baner .section__first-baner--text {
   position: absolute;
@@ -158,31 +151,32 @@ section .section_baners .section__baners--first-baner .section__first-baner--tex
 }
 section .section_baners .section__baners--first-baner .section__first-baner--text .section__baner--text-large {
   font-family: Metropolis-bold;
-  font-size: 44px;
+  font-size: 2.5vw;
   margin-bottom: 0;
 }
 section .section_baners .section__baners--first-baner .section__first-baner--text .section__baner--text-medium {
   font-family: Metropolis-light;
-  font-size: 44px;
+  font-size: 2.5vw;
   margin-top: 0.2vw;
   margin-bottom: 1vw;
 }
 section .section_baners .section__baners--first-baner .section__first-baner--text .section__baner--btn-show-more {
-  height: 55px;
-  width: 204px;
-  margin-top: 0px;
-  color: white;
-  background-color: transparent;
-  border: 1px solid white;
+  height: 2.8vw;
+  width: 10.7vw;
+  margin-top: 0;
   font-family: Metropolis-bold;
+  font-size: 0.7vw;
+  color: white;
   text-transform: uppercase;
+  border: 1px solid white;
+  background-color: transparent;
   cursor: pointer;
 }
 section .section_baners .section__baners--second-baner {
   position: relative;
   height: auto;
   width: 33%;
-  margin: 20px 0;
+  margin: 1.2vw 0;
 }
 section .section_baners .section__baners--second-baner .section__second-baner--text {
   position: absolute;
@@ -193,31 +187,32 @@ section .section_baners .section__baners--second-baner .section__second-baner--t
 }
 section .section_baners .section__baners--second-baner .section__second-baner--text .section__baner--text-large {
   font-family: Metropolis-bold;
-  font-size: 44px;
+  font-size: 2.5vw;
   margin-bottom: 0;
 }
 section .section_baners .section__baners--second-baner .section__second-baner--text .section__baner--text-medium {
   font-family: Metropolis-light;
-  font-size: 44px;
+  font-size: 2.5vw;
   margin-top: 0.2vw;
   margin-bottom: 1vw;
 }
 section .section_baners .section__baners--second-baner .section__second-baner--text .section__baner--btn-show-more {
-  height: 55px;
-  width: 204px;
-  margin-top: 0px;
-  color: white;
-  background-color: transparent;
-  border: 1px solid white;
+  height: 2.8vw;
+  width: 10.7vw;
+  margin-top: 0;
   font-family: Metropolis-bold;
+  font-size: 0.7vw;
+  color: white;
   text-transform: uppercase;
+  border: 1px solid white;
+  background-color: transparent;
   cursor: pointer;
 }
 section .section_baners .section__baners--third-baner {
   position: relative;
   height: auto;
   width: 33%;
-  margin: 20px 0 20px 30px;
+  margin: 1.2vw 0 1.2vw 1.8vw;
 }
 section .section_baners .section__baners--third-baner .section__third-baner--text {
   position: absolute;
@@ -228,24 +223,25 @@ section .section_baners .section__baners--third-baner .section__third-baner--tex
 }
 section .section_baners .section__baners--third-baner .section__third-baner--text .section__baner--text-large {
   font-family: Metropolis-bold;
-  font-size: 44px;
+  font-size: 2.5vw;
   margin-bottom: 0;
 }
 section .section_baners .section__baners--third-baner .section__third-baner--text .section__baner--text-medium {
   font-family: Metropolis-light;
-  font-size: 44px;
+  font-size: 2.5vw;
   margin-top: 0.2vw;
   margin-bottom: 1vw;
 }
 section .section_baners .section__baners--third-baner .section__third-baner--text .section__baner--btn-show-more {
-  height: 55px;
-  width: 204px;
-  margin-top: 0px;
-  color: white;
-  background-color: transparent;
-  border: 1px solid white;
+  height: 2.8vw;
+  width: 10.7vw;
+  margin-top: 0;
   font-family: Metropolis-bold;
+  font-size: 0.7vw;
+  color: white;
   text-transform: uppercase;
+  border: 1px solid white;
+  background-color: transparent;
   cursor: pointer;
 }
 
@@ -264,7 +260,7 @@ section .section_baners .section__baners--third-baner .section__third-baner--tex
 
 @media only screen and (max-width: 920px) {
   section {
-    padding-top: 90px;
+    margin-top: 80px;
     justify-content: center;
   }
 }
