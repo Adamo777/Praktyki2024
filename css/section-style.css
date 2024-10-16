@@ -1,6 +1,8 @@
 section {
   background: #f2f3f4;
   padding: 1.2vw 1.8vw;
+  display: flex;
+  flex-direction: column;
 }
 section .section__slide-image {
   width: 100%;
@@ -128,39 +130,39 @@ section .section__second-slide .section__slide--text .section__slide--btn-show-m
 section .unvisible-slide {
   display: none;
 }
-section .section_baners {
+section .section__baners {
   width: 100%;
   display: flex;
 }
-section .section_baners .section__baner-image {
+section .section__baners .section__baner-image {
   width: 100%;
   filter: brightness(0.7);
 }
-section .section_baners .section__baners--first-baner {
+section .section__baners .section__baners--first-baner {
   position: relative;
   height: auto;
   width: 33%;
   margin: 1.2vw 1.8vw 1.2vw 0;
 }
-section .section_baners .section__baners--first-baner .section__first-baner--text {
+section .section__baners .section__baners--first-baner .section__first-baner--text {
   position: absolute;
   top: 30%;
   left: 8%;
   color: white;
   text-align: left;
 }
-section .section_baners .section__baners--first-baner .section__first-baner--text .section__baner--text-large {
+section .section__baners .section__baners--first-baner .section__first-baner--text .section__baner--text-large {
   font-family: Metropolis-bold;
   font-size: 2.5vw;
   margin-bottom: 0;
 }
-section .section_baners .section__baners--first-baner .section__first-baner--text .section__baner--text-medium {
+section .section__baners .section__baners--first-baner .section__first-baner--text .section__baner--text-medium {
   font-family: Metropolis-light;
   font-size: 2.5vw;
   margin-top: 0.2vw;
   margin-bottom: 1vw;
 }
-section .section_baners .section__baners--first-baner .section__first-baner--text .section__baner--btn-show-more {
+section .section__baners .section__baners--first-baner .section__first-baner--text .section__baner--btn-show-more {
   height: 2.8vw;
   width: 10.7vw;
   margin-top: 0;
@@ -172,31 +174,31 @@ section .section_baners .section__baners--first-baner .section__first-baner--tex
   background-color: transparent;
   cursor: pointer;
 }
-section .section_baners .section__baners--second-baner {
+section .section__baners .section__baners--second-baner {
   position: relative;
   height: auto;
   width: 33%;
   margin: 1.2vw 0;
 }
-section .section_baners .section__baners--second-baner .section__second-baner--text {
+section .section__baners .section__baners--second-baner .section__second-baner--text {
   position: absolute;
   top: 30%;
   left: 8%;
   color: white;
   text-align: left;
 }
-section .section_baners .section__baners--second-baner .section__second-baner--text .section__baner--text-large {
+section .section__baners .section__baners--second-baner .section__second-baner--text .section__baner--text-large {
   font-family: Metropolis-bold;
   font-size: 2.5vw;
   margin-bottom: 0;
 }
-section .section_baners .section__baners--second-baner .section__second-baner--text .section__baner--text-medium {
+section .section__baners .section__baners--second-baner .section__second-baner--text .section__baner--text-medium {
   font-family: Metropolis-light;
   font-size: 2.5vw;
   margin-top: 0.2vw;
   margin-bottom: 1vw;
 }
-section .section_baners .section__baners--second-baner .section__second-baner--text .section__baner--btn-show-more {
+section .section__baners .section__baners--second-baner .section__second-baner--text .section__baner--btn-show-more {
   height: 2.8vw;
   width: 10.7vw;
   margin-top: 0;
@@ -208,31 +210,31 @@ section .section_baners .section__baners--second-baner .section__second-baner--t
   background-color: transparent;
   cursor: pointer;
 }
-section .section_baners .section__baners--third-baner {
+section .section__baners .section__baners--third-baner {
   position: relative;
   height: auto;
   width: 33%;
   margin: 1.2vw 0 1.2vw 1.8vw;
 }
-section .section_baners .section__baners--third-baner .section__third-baner--text {
+section .section__baners .section__baners--third-baner .section__third-baner--text {
   position: absolute;
   top: 30%;
   left: 8%;
   color: white;
   text-align: left;
 }
-section .section_baners .section__baners--third-baner .section__third-baner--text .section__baner--text-large {
+section .section__baners .section__baners--third-baner .section__third-baner--text .section__baner--text-large {
   font-family: Metropolis-bold;
   font-size: 2.5vw;
   margin-bottom: 0;
 }
-section .section_baners .section__baners--third-baner .section__third-baner--text .section__baner--text-medium {
+section .section__baners .section__baners--third-baner .section__third-baner--text .section__baner--text-medium {
   font-family: Metropolis-light;
   font-size: 2.5vw;
   margin-top: 0.2vw;
   margin-bottom: 1vw;
 }
-section .section_baners .section__baners--third-baner .section__third-baner--text .section__baner--btn-show-more {
+section .section__baners .section__baners--third-baner .section__third-baner--text .section__baner--btn-show-more {
   height: 2.8vw;
   width: 10.7vw;
   margin-top: 0;
@@ -248,11 +250,69 @@ section .section_baners .section__baners--third-baner .section__third-baner--tex
 @media only screen and (max-width: 920px) {
   section {
     margin-top: 80px;
+    display: flex;
     justify-content: center;
   }
   section .section__baners {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+  }
+  section .section__baners .section__baners--first-baner {
+    width: 70%;
+    margin: 1.2vw auto 1.2vw auto;
+  }
+  section .section__baners .section__baners--first-baner .section__first-baner--text .section__baner--text-large {
+    font-size: 5vw;
+  }
+  section .section__baners .section__baners--first-baner .section__first-baner--text .section__baner--text-medium {
+    font-size: 5vw;
+    margin-top: 0.5vw;
+    margin-bottom: 2.5vw;
+  }
+  section .section__baners .section__baners--first-baner .section__first-baner--text .section__baner--btn-show-more {
+    height: 4.8vw;
+    width: 21.7vw;
+    font-size: 1.2vw;
+  }
+  section .section__baners .section__baners--second-baner {
+    width: 70%;
+    margin: 1.2vw auto 1.2vw auto;
+  }
+  section .section__baners .section__baners--second-baner .section__second-baner--text .section__baner--text-large {
+    font-size: 5vw;
+  }
+  section .section__baners .section__baners--second-baner .section__second-baner--text .section__baner--text-medium {
+    font-size: 5vw;
+    margin-top: 0.5vw;
+    margin-bottom: 2.5vw;
+  }
+  section .section__baners .section__baners--second-baner .section__second-baner--text .section__baner--btn-show-more {
+    height: 4.8vw;
+    width: 21.7vw;
+    font-size: 1.2vw;
+  }
+  section .section__baners .section__baners--third-baner {
+    width: 70%;
+    margin: 1.2vw auto 1.2vw auto;
+  }
+  section .section__baners .section__baners--third-baner .section__third-baner--text .section__baner--text-large {
+    font-size: 5vw;
+  }
+  section .section__baners .section__baners--third-baner .section__third-baner--text .section__baner--text-medium {
+    font-size: 5vw;
+    margin-top: 0.5vw;
+    margin-bottom: 2.5vw;
+  }
+  section .section__baners .section__baners--third-baner .section__third-baner--text .section__baner--btn-show-more {
+    height: 4.8vw;
+    width: 21.7vw;
+    font-size: 1.2vw;
+  }
+  section .section__baners--second-baner,
+  section .section__baners--third-baner {
+    width: 70%;
+    margin: 1.2vw auto 1.2vw auto;
   }
 }
 

@@ -3,6 +3,8 @@
 section {
   background: #f2f3f4;
   padding: 1.2vw 1.8vw;
+  display: flex;
+  flex-direction: column;
 
   // Slide images
   .section__slide-image {
@@ -155,7 +157,7 @@ section {
   }
 
   // Baners
-  .section_baners {
+  .section__baners {
     width: 100%;
     display: flex;
 
@@ -291,6 +293,10 @@ section {
       }
     }
   }
+
+  // why-us?
+
+
 }
 
 // SECTION MEDIA
@@ -301,12 +307,88 @@ section {
 @media only screen and (max-width: 920px) {
   section {
     margin-top: 80px;
+    display: flex;
     justify-content: center;
+
     .section__baners {
       display: flex;
       flex-direction: column;
+      justify-content: center;
+
+      .section__baners--first-baner {
+        width: 70%;
+        margin: 1.2vw auto 1.2vw auto;
+
+        .section__first-baner--text {
+          .section__baner--text-large {
+            font-size: 5vw;
+          }
+
+          .section__baner--text-medium {
+            font-size: 5vw;
+            margin-top: 0.5vw;
+            margin-bottom: 2.5vw;
+          }
+          
+          .section__baner--btn-show-more {
+            height: 4.8vw;
+            width: 21.7vw;
+            font-size: 1.2vw;
+          }
+        }
+      }
+      .section__baners--second-baner {
+        width: 70%;
+        margin: 1.2vw auto 1.2vw auto;
+
+        .section__second-baner--text {
+          .section__baner--text-large {
+            font-size: 5vw;
+          }
+
+          .section__baner--text-medium {
+            font-size: 5vw;
+            margin-top: 0.5vw;
+            margin-bottom: 2.5vw;
+          }
+
+          .section__baner--btn-show-more {
+            height: 4.8vw;
+            width: 21.7vw;
+            font-size: 1.2vw;
+          }
+        }
+      }
+      .section__baners--third-baner {
+        width: 70%;
+        margin: 1.2vw auto 1.2vw auto;
+
+        .section__third-baner--text {
+          .section__baner--text-large {
+            font-size: 5vw;
+          }
+
+          .section__baner--text-medium {
+            font-size: 5vw;
+            margin-top: 0.5vw;
+            margin-bottom: 2.5vw;
+          }
+
+          .section__baner--btn-show-more {
+            height: 4.8vw;
+            width: 21.7vw;
+            font-size: 1.2vw;
+          }
+        }
+      }
+    }
+    .section__baners--second-baner,
+    .section__baners--third-baner {
+      width: 70%;
+      margin: 1.2vw auto 1.2vw auto;
     }
   }
 }
+
 @media only screen and (max-width: 788px) {
 }

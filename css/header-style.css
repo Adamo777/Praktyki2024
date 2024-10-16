@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+.container {
+  position: relative;
+}
+
 .nav__swipe-btn {
   position: absolute;
   display: flex;
@@ -42,9 +46,9 @@
   padding: 1.8vw;
   border-bottom: 1px solid #E1E2E8;
 }
-.header__panel .header__logo {
-  height: 1.8vw;
-  width: 7.4vw;
+.header__panel .header__logo--image {
+  height: 3.3vw;
+  width: 12.4vw;
 }
 .header__panel .header__menu {
   display: flex;
@@ -117,7 +121,7 @@
 @media only screen and (max-width: 920px) {
   header {
     width: 100%;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     border-top: 1px solid #E1E2E8;
   }
