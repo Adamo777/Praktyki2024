@@ -245,23 +245,14 @@ section .section_baners .section__baners--third-baner .section__third-baner--tex
   cursor: pointer;
 }
 
-.section__baners {
-  flex-direction: column;
-}
-.section__baners .section__baners--first-baner {
-  margin: 0;
-}
-.section__baners .section__baners--second-baner {
-  margin: 0;
-}
-.section__baners .section__baners--thirde-baner {
-  margin: 0;
-}
-
 @media only screen and (max-width: 920px) {
   section {
     margin-top: 80px;
     justify-content: center;
+  }
+  section .section__baners {
+    display: flex;
+    flex-direction: column;
   }
 }
 

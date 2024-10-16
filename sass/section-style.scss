@@ -297,23 +297,15 @@ section {
 
 @media only screen and (max-width: 1250px) {
 }
-.section__baners {
-  flex-direction: column;
 
-  .section__baners--first-baner {
-    margin: 0;
-  }
-  .section__baners--second-baner {
-    margin: 0;
-  }
-  .section__baners--thirde-baner {
-    margin: 0;
-  }
-}
 @media only screen and (max-width: 920px) {
   section {
     margin-top: 80px;
     justify-content: center;
+    .section__baners {
+      display: flex;
+      flex-direction: column;
+    }
   }
 }
 @media only screen and (max-width: 788px) {

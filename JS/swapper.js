@@ -1,6 +1,6 @@
 "use strict";
 
-(function() {
+(function () {
     const firstSlide = document.querySelector(".section__first-slide");
     const secondSlide = document.querySelector(".section__second-slide");
 
@@ -14,8 +14,4 @@
       secondSlide.classList.toggle("unvisible-slide");
     })
 
-
-
-    
- 
 })();
