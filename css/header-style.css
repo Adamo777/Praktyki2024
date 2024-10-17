@@ -138,8 +138,7 @@
     margin-left: unset;
   }
   header .header__panel .header__logo {
-    position: fixed;
-    top: 10px;
+    display: none;
   }
 }
 @media only screen and (max-width: 788px) {

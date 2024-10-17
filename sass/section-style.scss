@@ -296,7 +296,103 @@ section {
 
   // why-us?
 
+  .section__why-us {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 
+    .section__why-us-image {
+      width: 100%;
+      filter: brightness(0.6);
+    }
+
+    .section__why-us-heading {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 100%;
+      height: auto;
+      transform: translateX(-50%);
+      margin-top: 3.8vw;
+      font-size: 2.5vw;
+      font-family: Metropolis-bold;
+      color: white;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+
+      .section__why-us-heading--text {
+        margin-bottom: 1.6vw;
+      }
+
+      .section__why-us-red-border-heading {
+        position: absolute;
+        height: 0.001vw;
+        width: 3.4vw;
+        left: 50%;
+        border: 1px solid variables.$primary-red;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    .section__why-us-description {
+      position: absolute;
+      left: 50%;
+      top: 9.5vw;
+      transform: translateX(-50%);
+      font-size: 1vw;
+      font-family: Metropolis-light;
+      color: white;
+      word-spacing: 2px;
+    }
+
+    .section__why-us-tiles {
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      top: 14.5vw;
+      width: 100%;
+
+      .section__why-us-tile {
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        font-family: Metropolis-bold;
+        color: white;
+        font-size: 0.8vw;
+        text-transform: uppercase;
+        margin: 0 0.9vw 0 0.9vw;
+        padding: 2.4vw 3.2vw 1.2vw 3.2vw;
+        width: 9%;
+
+        .section__why-us-tile--icon {
+          font-size: 2.5vw;
+        }
+        .section__why-us-tile--text {
+          margin-top: 1.2vw;
+        }
+      }
+    }
+
+    .section__why-us-button {
+      position: absolute;
+      bottom: 0;
+      margin-bottom: 2vw;
+      left: 50%;
+      transform: translateX(-50%);
+      font-family: Metropolis-bold;
+      font-size: 0.7vw;
+      color: white;
+      background-color: variables.$primary-red;
+      width: 12.5vw;
+      height: 3vw;
+      border: none;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+    .section__why-us-button-media {
+      display: none;
+    }
+  }
 }
 
 // SECTION MEDIA
@@ -306,86 +402,183 @@ section {
 
 @media only screen and (max-width: 920px) {
   section {
-    margin-top: 80px;
     display: flex;
     justify-content: center;
 
-    .section__baners {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+    // section baners @media queries
 
-      .section__baners--first-baner {
-        width: 70%;
-        margin: 1.2vw auto 1.2vw auto;
+    // .section__baners {
+    //   display: flex;
+    //   flex-direction: column;
+    //   justify-content: center;
 
-        .section__first-baner--text {
-          .section__baner--text-large {
-            font-size: 5vw;
-          }
+    //   .section__baners--first-baner {
+    //     width: 70%;
+    //     margin: 1.2vw auto 1.2vw auto;
 
-          .section__baner--text-medium {
-            font-size: 5vw;
-            margin-top: 0.5vw;
-            margin-bottom: 2.5vw;
-          }
-          
-          .section__baner--btn-show-more {
-            height: 4.8vw;
-            width: 21.7vw;
-            font-size: 1.2vw;
+    //     .section__first-baner--text {
+    //       .section__baner--text-large {
+    //         font-size: 5vw;
+    //       }
+
+    //       .section__baner--text-medium {
+    //         font-size: 5vw;
+    //         margin-top: 0.5vw;
+    //         margin-bottom: 2.5vw;
+    //       }
+
+    //       .section__baner--btn-show-more {
+    //         height: 4.8vw;
+    //         width: 21.7vw;
+    //         font-size: 1.2vw;
+    //       }
+    //     }
+    //   }
+    //   .section__baners--second-baner {
+    //     width: 70%;
+    //     margin: 1.2vw auto 1.2vw auto;
+
+    //     .section__second-baner--text {
+    //       .section__baner--text-large {
+    //         font-size: 5vw;
+    //       }
+
+    //       .section__baner--text-medium {
+    //         font-size: 5vw;
+    //         margin-top: 0.5vw;
+    //         margin-bottom: 2.5vw;
+    //       }
+
+    //       .section__baner--btn-show-more {
+    //         height: 4.8vw;
+    //         width: 21.7vw;
+    //         font-size: 1.2vw;
+    //       }
+    //     }
+    //   }
+    //   .section__baners--third-baner {
+    //     width: 70%;
+    //     margin: 1.2vw auto 1.2vw auto;
+
+    //     .section__third-baner--text {
+    //       .section__baner--text-large {
+    //         font-size: 5vw;
+    //       }
+
+    //       .section__baner--text-medium {
+    //         font-size: 5vw;
+    //         margin-top: 0.5vw;
+    //         margin-bottom: 2.5vw;
+    //       }
+
+    //       .section__baner--btn-show-more {
+    //         height: 4.8vw;
+    //         width: 21.7vw;
+    //         font-size: 1.2vw;
+    //       }
+    //     }
+    //   }
+    // }
+    // .section__baners--second-baner,
+    // .section__baners--third-baner {
+    //   width: 70%;
+    //   margin: 1.2vw auto 1.2vw auto;
+    // }
+
+    // section why-us @media queries
+
+    .section__why-us {
+      width: 100%;
+      flex-direction: row;
+
+      .section__why-us-heading {
+        display: flex;
+        align-items: center;
+        left: 16.5%;
+        width: 33%;
+        height: 100%;
+        margin-top: unset;
+        border-right: 1px solid rgba(255, 255, 255, 0.3);
+
+        .section__why-us-heading--text {
+          text-align: center;
+          margin-bottom: 1.6vw;
+          font-size: 6vw;
+          line-height: 1.3;
+        }
+
+        .section__why-us-heading--text::after {
+          content: ":";
+        }
+
+        .section__why-us-red-border-heading {
+          left: 100%;
+          top: 50%;
+          height: 3.4vw;
+          width: 0.001vw;
+        }
+      }
+
+      .section__why-us-description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 33%;
+        height: 100%;
+        top: 0;
+        font-size: 2vw;
+        border-right: 1px solid rgba(255, 255, 255, 0.3);
+
+
+        .section__why-us-red-border-description {
+          position: absolute;
+          right: 0;
+          height: 3.4vw;
+          width: 0.001vw;
+          border: 1px solid variables.$primary-red;
+        }
+      }
+
+      .section__why-us-tiles {
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+        top: 0;
+        width: 33%;
+        right: 0;
+
+        .section__why-us-tile {
+          border: 1px solid rgba(255, 255, 255, 0.3);
+          font-size: 1.1vw;
+          margin: 0.7vw 0 0.7vw 0;
+          padding: 1.8vw 3.2vw 1.2vw 3.2vw;
+          width: 50%;
+
+          .section__why-us-tile--icon {
+            font-size: 3vw;
           }
         }
       }
-      .section__baners--second-baner {
-        width: 70%;
-        margin: 1.2vw auto 1.2vw auto;
 
-        .section__second-baner--text {
-          .section__baner--text-large {
-            font-size: 5vw;
-          }
-
-          .section__baner--text-medium {
-            font-size: 5vw;
-            margin-top: 0.5vw;
-            margin-bottom: 2.5vw;
-          }
-
-          .section__baner--btn-show-more {
-            height: 4.8vw;
-            width: 21.7vw;
-            font-size: 1.2vw;
-          }
-        }
+      .section__why-us-button {
+        display: none;
       }
-      .section__baners--third-baner {
-        width: 70%;
-        margin: 1.2vw auto 1.2vw auto;
 
-        .section__third-baner--text {
-          .section__baner--text-large {
-            font-size: 5vw;
-          }
-
-          .section__baner--text-medium {
-            font-size: 5vw;
-            margin-top: 0.5vw;
-            margin-bottom: 2.5vw;
-          }
-
-          .section__baner--btn-show-more {
-            height: 4.8vw;
-            width: 21.7vw;
-            font-size: 1.2vw;
-          }
-        }
+      .section__why-us-button-media{
+        margin-top: 1.5vw;
+        display: inline;
+        font-family: Metropolis-bold;
+        font-size: 1vw;
+        color: white;
+        background-color: variables.$primary-red;
+        width: 17.5vw;
+        height: 3vw;
+        border: none;
+        text-transform: uppercase;
+        cursor: pointer;
+                
       }
-    }
-    .section__baners--second-baner,
-    .section__baners--third-baner {
-      width: 70%;
-      margin: 1.2vw auto 1.2vw auto;
     }
   }
 }

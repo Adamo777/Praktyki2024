@@ -1,11 +1,11 @@
-@use 'variables';
+@use "variables";
 
-*{
+* {
   margin: 0;
   padding: 0;
 }
 
-.container{
+.container {
   position: relative;
 }
 
@@ -134,7 +134,6 @@
   .menu__element--icon-text p {
     display: none;
   }
-
 }
 
 @media only screen and (max-width: 920px) {
@@ -155,12 +154,11 @@
     .header__panel {
       justify-content: center;
 
-        .header__menu{
-          margin-left: unset;
-        }
+      .header__menu {
+        margin-left: unset;
+      }
       .header__logo {
-        position: fixed;
-        top: 10px;
+        display: none;
       }
     }
   }
