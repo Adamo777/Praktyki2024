@@ -2,7 +2,6 @@
 
 section {
   background: #f2f3f4;
-  padding: 1.2vw 1.8vw;
   display: flex;
   flex-direction: column;
 
@@ -316,22 +315,18 @@ section {
       width: 100%;
       height: auto;
       transform: translateX(-50%);
-      margin-top: 3.8vw;
+      margin-top: 1.4vw;
       font-size: 2.5vw;
       font-family: Metropolis-bold;
       color: white;
       border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 
-      .section__why-us-heading--text {
-        margin-bottom: 1.6vw;
-      }
-
       .section__why-us-red-border-heading {
         position: absolute;
-        height: 0.001vw;
+        height: 0.2vw;
         width: 3.4vw;
         left: 50%;
-        border: 1px solid variables.$primary-red;
+        background-color: variables.$primary-red;
         transform: translate(-50%, -50%);
       }
     }
@@ -339,19 +334,20 @@ section {
     .section__why-us-description {
       position: absolute;
       left: 50%;
-      top: 9.5vw;
+      top: 8.5vw;
       transform: translateX(-50%);
       font-size: 1vw;
       font-family: Metropolis-light;
       color: white;
       word-spacing: 2px;
+      margin-top: 1.5vw;
     }
 
     .section__why-us-tiles {
       display: flex;
       justify-content: center;
       position: absolute;
-      top: 14.5vw;
+      top: 15.5vw;
       width: 100%;
 
       .section__why-us-tile {
@@ -376,7 +372,7 @@ section {
     .section__why-us-button {
       position: absolute;
       bottom: 0;
-      margin-bottom: 2vw;
+      margin-bottom: 0.7vw;
       left: 50%;
       transform: translateX(-50%);
       font-family: Metropolis-bold;
@@ -391,6 +387,59 @@ section {
     }
     .section__why-us-button-media {
       display: none;
+    }
+  }
+
+  // info-footer
+  .section__info {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: variables.$dark-grey;
+
+    .section__info-item {
+      width: 25%;
+      padding: 1.5vw 1vw;
+
+      .section__info-item-text {
+        position: relative;
+        font-family: Metropolis-bold;
+        color: white;
+        text-transform: uppercase;
+        font-size: 0.7vw;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        line-height: 3vw;
+
+        .section__info-red-border {
+          position: absolute;
+          height: 3px;
+          width: 1.5vw;
+          background-color: variables.$primary-red;
+          transform: translateY(-50%);
+
+          .icon-icon_arrow-left {
+            display: none;
+          }
+        }
+      }
+
+      .section__info-list {
+        line-height: 2vw;
+
+        .section__info-list-ul {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+
+          .section__info-list-li a {
+            text-transform: uppercase;
+            color: white;
+            text-decoration: none;
+            font-size: 0.7vw;
+            font-family: Metropolis-light;
+          }
+        }
+      }
     }
   }
 }
@@ -493,18 +542,16 @@ section {
 
       .section__why-us-heading {
         display: flex;
-        align-items: center;
         left: 16.5%;
         width: 33%;
         height: 100%;
         margin-top: unset;
         border-right: 1px solid rgba(255, 255, 255, 0.3);
+        border-bottom: none;
 
         .section__why-us-heading--text {
           text-align: center;
-          margin-bottom: 1.6vw;
           font-size: 6vw;
-          line-height: 1.3;
         }
 
         .section__why-us-heading--text::after {
@@ -515,7 +562,8 @@ section {
           left: 100%;
           top: 50%;
           height: 3.4vw;
-          width: 0.001vw;
+          width: 2px;
+          transform: translate(-50%, -50%);
         }
       }
 
@@ -529,14 +577,14 @@ section {
         top: 0;
         font-size: 2vw;
         border-right: 1px solid rgba(255, 255, 255, 0.3);
-
+        margin-top: unset;
 
         .section__why-us-red-border-description {
           position: absolute;
           right: 0;
           height: 3.4vw;
-          width: 0.001vw;
-          border: 1px solid variables.$primary-red;
+          width: 2px;
+          background-color: variables.$primary-red;
         }
       }
 
@@ -550,13 +598,13 @@ section {
 
         .section__why-us-tile {
           border: 1px solid rgba(255, 255, 255, 0.3);
-          font-size: 1.1vw;
+          font-size: 1.5vw;
           margin: 0.7vw 0 0.7vw 0;
-          padding: 1.8vw 3.2vw 1.2vw 3.2vw;
-          width: 50%;
+          padding: unset;
+          width: 70%;
 
           .section__why-us-tile--icon {
-            font-size: 3vw;
+            font-size: 4vw;
           }
         }
       }
@@ -565,8 +613,7 @@ section {
         display: none;
       }
 
-      .section__why-us-button-media{
-        margin-top: 1.5vw;
+      .section__why-us-button-media {
         display: inline;
         font-family: Metropolis-bold;
         font-size: 1vw;
@@ -577,7 +624,62 @@ section {
         border: none;
         text-transform: uppercase;
         cursor: pointer;
-                
+      }
+    }
+  }
+
+  // section info-footer @media queries
+  section {
+    .section__info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+
+      .section__info-item {
+        height: auto;
+
+        .section__info-item-text {
+          position: relative;
+          font-family: Metropolis-bold;
+          color: white;
+          text-transform: uppercase;
+          font-size: 2vw;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+          line-height: 3vw;
+          display: flex;
+          justify-content: center;
+
+          .section__info-red-border {
+            display: none;
+          }
+        }
+
+        .section__info-list {
+          line-height: 2vw;
+
+          .section__info-list-ul {
+            display: none; /* Lista domyślnie ukryta */
+            padding-left: 0;
+            margin-top: 10px;
+            text-align: center;
+
+            .section__info-list-li a {
+              text-transform: uppercase;
+              color: white;
+              text-decoration: none;
+              font-size: 0.7vw;
+              font-family: Metropolis-light;
+              display: block;
+              padding: 5px 0;
+            }
+          }
+
+          &.active .section__info-list-ul {
+            display: block;
+          }
+        }
       }
     }
   }

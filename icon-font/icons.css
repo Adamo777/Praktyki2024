@@ -61,3 +61,7 @@
 .icon-icon_minus:before {
   content: "\ea0b";
 }
+
+.icon-arrow-down:before {
+  content: "\ea36";
+}

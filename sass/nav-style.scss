@@ -1,5 +1,4 @@
-.nav {
-  padding: 1.1vw 1.8vw;
+@use "variables";
 
   .nav__list--ul-visible {
     display: flex;
@@ -7,6 +6,9 @@
     list-style: none;
     padding: 0;
     text-align: center;
+    padding: 1.5vw 0;
+    border-bottom: 1px solid variables.$primary-grey;
+    margin: 0;
 
     .nav__list--li-visible a {
       text-decoration: none;
@@ -17,17 +19,10 @@
     }
   }
 
-  // NAV UNVISIBLE IN HEADER-STYLE.SCSS
-}
-
 @media only screen and (max-width: 920px) {
   .nav__list-visible {
     display: none;
   }
-}
-
-.unvisible {
-  display: none;
 }
 
 @media only screen and (max-width: 788px) {
