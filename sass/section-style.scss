@@ -292,7 +292,80 @@ section {
       }
     }
   }
+  // products slider
 
+  .section__products-slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2vw 0;
+
+    .section__products-slider-heading {
+      width: 100%;
+      position: relative;
+      text-align: center;
+      border-bottom: 1px solid variables.$primary-grey;
+      font-family: Metropolis-bold;
+      font-size: 2.5vw;
+      .section__products-slider-red-border {
+        position: absolute;
+        height: 0.2vw;
+        width: 3.4vw;
+        left: 50%;
+        background-color: variables.$primary-red;
+        transform: translate(-50%, -50%);
+      }
+    }
+    .section__products-slider-products {
+      display: flex;
+      justify-content: space-between;
+      gap: 3vw;
+      margin: 2vw 0;
+
+      .section__products-slider-product {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 19%;
+        background-color: white;
+        height: 24vw;
+        .section__products-slider-product-text {
+          text-align: center;
+
+          .section__products-slider-product-name {
+            font-family: Metropolis-bold;
+            font-size: 0.7vw;
+            text-transform: uppercase;
+          }
+          .section__products-slider-product-code {
+            font-family: Metropolis-light;
+            font-size: 0.7vw;
+          }
+          .section__products-slider-product-discount {
+            font-family: Metropolis-light;
+            font-size: 0.7vw;
+            color: #a3a3a3;
+            text-decoration: line-through;
+          }
+          .section__products-slider-product-price {
+            font-family: Metropolis-bold;
+            font-size: 0.7vw;
+          }
+        }
+      }
+    }
+    .section__products-slider-button {
+      font-family: Metropolis-bold;
+      font-size: 0.7vw;
+      color: white;
+      background-color: variables.$primary-red;
+      width: 15.5vw;
+      height: 3vw;
+      border: none;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+  }
   // why-us?
 
   .section__why-us {
