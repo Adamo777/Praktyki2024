@@ -1,6 +1,6 @@
 @use "variables";
 
-  .nav__list--ul-visible {
+  .nav__list {
     display: flex;
     justify-content: space-between;
     list-style: none;
@@ -9,18 +9,17 @@
     padding: 1.5vw 0;
     border-bottom: 1px solid variables.$primary-grey;
     margin: 0;
-
-    .nav__list--li-visible a {
-      text-decoration: none;
-      color: #000;
-      font-family: Metropolis-bold;
-      text-transform: uppercase;
-      font-size: 0.8vw;
-    }
+  }
+  .nav__listLink {
+    text-decoration: none;
+    color: #000;
+    font-family: Metropolis-bold;
+    text-transform: uppercase;
+    font-size: 0.8vw;
   }
 
 @media only screen and (max-width: 920px) {
-  .nav__list-visible {
+  .nav__visible {
     display: none;
   }
 }

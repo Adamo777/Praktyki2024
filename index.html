@@ -6,7 +6,6 @@
     <!-- CSS FILES -->
     <link rel="stylesheet" href="./icon-font/icons.css" />
     <link rel="stylesheet" href="./css/font-face.css" />
-    <link rel="stylesheet" href="./css/container.css" />
     <link rel="stylesheet" href="./css/header-style.css" />
     <link rel="stylesheet" href="./css/nav-style.css" />
     <link rel="stylesheet" href="./css/section-style.css" />
@@ -15,203 +14,176 @@
   </head>
 
   <body>
-    <div class="container">
-      <header>
-        <div class="header">
-          <div class="header__panel">
-            <div class="header__logo">
-              <img
-                src="/photos/logo.png"
-                alt="Logo HURT"
-                class="header__logo--image"
-              />
+    <header class="header">
+      <div class="header__items">
+        <div class="header__logo">
+          <img src="/photos/logo.png" alt="Logo ELHURT" />
+        </div>
+
+        <div class="header__navMenu">
+          <a href="#" class="header__navItem">
+            <div class="header__navItem-element">
+              <i class="header__navIcon icon-icon_phone"></i>
+              <p>kontakt</p>
             </div>
+          </a>
 
-            <div class="header__menu">
-              <a href="#" class="menu__item">
-                <div class="menu__item--element">
-                  <div class="menu__element--icon-text">
-                    <i class="icon-icon_phone icon"></i>
-                    <p>kontakt</p>
-                  </div>
-                </div>
-              </a>
+          <a href="#" class="header__navItem">
+            <div class="header__navItem-element">
+              <i class="header__navIcon icon-icon_star"></i>
+              <p>ulubione</p>
+            </div>
+          </a>
 
-              <a href="#" class="menu__item">
-                <div class="menu__item--element">
-                  <div class="menu__element--icon-text">
-                    <i class="icon-icon_star icon"></i>
-                    <p>ulubione</p>
-                  </div>
-                </div>
-              </a>
+          <a href="#" class="header__navItem">
+            <div class="header__navItem-element">
+              <i class="header__navIcon icon-icon_user"></i>
+              <p>moje konto</p>
+            </div>
+          </a>
 
-              <a href="#" class="menu__item">
-                <div class="menu__item--element">
-                  <div class="menu__element--icon-text">
-                    <i class="icon-icon_user icon"></i>
-                    <p>moje konto</p>
-                  </div>
-                </div>
-              </a>
-
-              <div class="menu__item-cart">
-                <a href="#" class="menu__item">
-                  <div class="menu__item-cart--icon">
-                    <i class="icon-icon_shopping-cart icon"></i>
-                  </div>
-
-                  <div class="menu__item-cart--info">
-                    <p>Twój koszyk</p>
-                    <p>3456,00 zł</p>
-                  </div>
-                </a>
-                <div class="menu__item-cart--green-icon">
-                  <i class="icon-icon_arrow-right icon"></i>
-                </div>
+          <div class="header__cartContainer">
+            <a href="#" class="header__navItem">
+              <div class="header__cartIcon">
+                <i class="header__navIcon icon-icon_shopping-cart"></i>
               </div>
-            </div>
-          </div>
 
-          <div class="nav">
-            <div class="nav__list-visible">
-              <ul class="nav__list--ul-visible">
-                <li class="nav__list--li-visible">
-                  <a href="#">Źródła światła</a>
-                </li>
-                <li class="nav__list--li-visible">
-                  <a href="#">Oświetlenie wewnętrzne</a>
-                </li>
-                <li class="nav__list--li-visible">
-                  <a href="#">Gniazdka, wyłączniki</a>
-                </li>
-                <li class="nav__list--li-visible">
-                  <a href="#">Automatyka, sterowanie</a>
-                </li>
-                <li class="nav__list--li-visible">
-                  <a href="#">Rozdzielnie aparatura</a>
-                </li>
-                <li class="nav__list--li-visible">
-                  <a href="#">Materiały instalacyjne</a>
-                </li>
-              </ul>
+              <div class="header__cartInfo">
+                <p>Twój koszyk</p>
+                <p>3456,00 zł</p>
+              </div>
+            </a>
+            <div class="header__cartContainer-arrow-right">
+              <i class="header__navIcon icon-icon_arrow-right"></i>
             </div>
           </div>
         </div>
-      </header>
+      </div>
 
-      <section>
-        <!-- SLIDER -->
+      <nav class="nav__visible">
+        <ul class="nav__list">
+          <li>
+            <a href="#" class="nav__listLink">Źródła światła</a>
+          </li>
+          <li>
+            <a href="#" class="nav__listLink">Oświetlenie wewnętrzne</a>
+          </li>
+          <li>
+            <a href="#" class="nav__listLink">Gniazdka, wyłączniki</a>
+          </li>
+          <li>
+            <a href="#" class="nav__listLink">Automatyka, sterowanie</a>
+          </li>
+          <li>
+            <a href="#" class="nav__listLink">Rozdzielnie aparatura</a>
+          </li>
+          <li>
+            <a href="#" class="nav__listLink">Materiały instalacyjne</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-        <!-- FIRST SLIDE -->
+    <main>
+      <section class="mainSlider">
+        <div class="mainSlider__btn-left">
+          <i class="icon-icon_arrow-left"></i>
+        </div>
+        <div class="mainSlider__btn-right">
+          <i class="icon-icon_arrow-right"></i>
+        </div>
 
-        <div class="section__first-slide">
+        <!-- FIRST SLIDE  -->
+
+        <div class="mainSlider__first mainSlider__slide">
           <img
             src="./photos/slide_02.png"
             alt="Tło pierwszego slajdu"
-            class="section__slide-image"
+            class="mainSlider__image"
           />
-          <div class="section__slide--btn-left">
-            <i class="icon-icon_arrow-left"></i>
-          </div>
-          <div class="section__slide--btn-right">
-            <i class="icon-icon_arrow-right"></i>
-          </div>
-          <div class="section__slide--text">
-            <p class="section__slide--text-large">Philips HUE</p>
-            <p class="section__slide--text-medium">Oświetl swoj dom</p>
-            <p class="section__slide--text-small">
+
+          <div class="mainSlider__text">
+            <p class="mainSlider__text-large">Philips HUE</p>
+            <p class="mainSlider__text-medium">Oświetl swoj dom</p>
+            <p class="mainSlider__text-small">
               Wyobraź sobie, że jednym <br />
               dotknięciem wyłączasz <br />
               wszystkie światła.
             </p>
-            <button class="section__slide--btn-show-more">Zobacz więcej</button>
+            <button class="mainSlider__button">Zobacz więcej</button>
           </div>
         </div>
 
         <!-- SECOND SLIDE -->
 
-        <div class="section__second-slide unvisible-slide">
+        <div class="mainSlider__second mainSlider__slide unvisible-slide">
           <img
             src="./photos/img_01.jpg"
             alt="Tło drugiego slajdu"
-            class="section__slide-image"
+            class="mainSlider__image"
           />
-          <div class="section__slide--btn-left">
-            <i class="icon-icon_arrow-left"></i>
-          </div>
-          <div class="section__slide--btn-right">
-            <i class="icon-icon_arrow-right"></i>
-          </div>
-          <div class="section__slide--text">
-            <p class="section__slide--text-large">Poznaj SEDNA</p>
-            <p class="section__slide--text-medium">Schneider Electric</p>
-            <p class="section__slide--text-small">
+
+          <div class="mainSlider__text">
+            <p class="mainSlider__text-large">Poznaj SEDNA</p>
+            <p class="mainSlider__text-medium">Schneider Electric</p>
+            <p class="mainSlider__text-small">
               Sedna to osprzęt elektroinstalacyjny <br />
               o wyrazistym kształcie oraz <br />
               unikalnej formie.
             </p>
-            <button class="section__slide--btn-show-more">Zobacz więcej</button>
+            <button class="mainSlider__button">Zobacz więcej</button>
           </div>
         </div>
+      </section>
 
-        <!-- BANERS -->
+      <!-- BANERS -->
 
-        <div class="section__baners">
-          <!-- FIRST BANER -->
-
-          <div class="section__baners--first-baner">
-            <img
-              src="./photos/img_02.jpg"
-              alt="Background of the first banner"
-              class="section__baner-image"
-            />
-            <div class="section__first-baner--text">
-              <p class="section__baner--text-large">Pomoc eksperta</p>
-              <p class="section__baner--text-medium">Doradzamy</p>
-              <button class="section__baner--btn-show-more">
-                Zobacz więcej
-              </button>
-            </div>
-          </div>
-
-          <!-- SECOND BANER -->
-
-          <div class="section__baners--second-baner">
-            <img
-              src="./photos/img_03.jpg"
-              alt="Background of the second banner"
-              class="section__baner-image"
-            />
-            <div class="section__second-baner--text">
-              <p class="section__baner--text-large">Szukaj wygodnie</p>
-              <p class="section__baner--text-medium">Elhurt plus</p>
-              <button class="section__baner--btn-show-more">
-                Zobacz więcej
-              </button>
-            </div>
-          </div>
-
-          <!-- THIRD BANER -->
-
-          <div class="section__baners--third-baner">
-            <img
-              src="./photos/img_05.jpg"
-              alt="Background of the third banner"
-              class="section__baner-image"
-            />
-
-            <div class="section__third-baner--text">
-              <p class="section__baner--text-large">Seria Unica</p>
-              <p class="section__baner--text-medium">Wyjątkowy wzór</p>
-              <button class="section__baner--btn-show-more">
-                Zobacz więcej
-              </button>
-            </div>
+      <section class="baners">
+        <!-- FIRST BANER -->
+        <div class="baners__first">
+          <img
+            src="./photos/img_02.jpg"
+            alt="Background of the first banner"
+            class="baners__image"
+          />
+          <div class="baners__first-text">
+            <p class="baners__text-large">Pomoc eksperta</p>
+            <p class="baners__text-medium">Doradzamy</p>
+            <button class="baners__button">Zobacz więcej</button>
           </div>
         </div>
+        <!-- SECOND BANER -->
+        <div class="baners__second">
+          <img
+            src="./photos/img_03.jpg"
+            alt="Background of the second banner"
+            class="baners__image"
+          />
+          <div class="baners__second-text">
+            <p class="baners__text-large">Szukaj wygodnie</p>
+            <p class="baners__text-medium">Elhurt plus</p>
+            <button class="baners__button">Zobacz więcej</button>
+          </div>
+        </div>
+        <!-- THIRD BANER -->
+        <div class="baners__third">
+          <img
+            src="./photos/img_05.jpg"
+            alt="Background of the third banner"
+            class="baners__image"
+          />
+          <div class="baners__third-text">
+            <p class="baners__text-large">Seria Unica</p>
+            <p class="baners__text-medium">Wyjątkowy wzór</p>
+            <button class="baners__button">Zobacz więcej</button>
+          </div>
+        </div>
+      </section>
+    </main>
 
-        <!-- PRODUCTS-SLIDER -->
+    <!--
+
+        PRODUCTS-SLIDER
 
         <div class="section__products-slider">
           <div class="section__products-slider-heading">
@@ -396,7 +368,7 @@
             Zobacz wszystkie inspiracje
           </button>
         </div>
-        <!-- WHY-US? -->
+        WHY-US?
 
         <div class="section__why-us">
           <img
@@ -441,7 +413,7 @@
           <button class="section__why-us-button">Informacje o firmie</button>
         </div>
 
-        <!-- INFO-FOOTER -->
+        INFO-FOOTER
 
         <div class="section__info">
           <div class="section__info-item">
@@ -564,9 +536,7 @@
               </ul>
             </div>
           </div>
-        </div>
-      </section>
-    </div>
+        </div> -->
 
     <script src="./JS/menu.js"></script>
     <script src="./JS/swapper.js"></script>

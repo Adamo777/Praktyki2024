@@ -1,72 +1,78 @@
 @use "variables";
 
-section {
-  background: #f2f3f4;
-  display: flex;
-  flex-direction: column;
+.mainSlider {
+  background-color: #f2f3f4;
+  position: relative;
 
-  // Slide images
-  .section__slide-image {
-    width: 100%;
+  .mainSlider__btn-left,
+  .mainSlider__btn-right {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3vw;
+    width: 3vw;
+    opacity: 50%;
+    background-color: white;
+    transform: translateY(-50%);
+    font-size: 0.9vw;
+    z-index: 1;
+    transition: opacity 0.3s ease;
   }
 
+  .mainSlider__btn-left {
+    left: 0;
+    top: 50%;
+  }
+
+  .mainSlider__btn-right {
+    right: 0;
+    top: 50%;
+  }
+
+  .mainSlider__btn-left:hover,
+  .mainSlider__btn-right:hover {
+    opacity: 100%; 
+  }
+
+  // Slide images
+
+  .mainSlider__image{
+    width: 100%;
+  }
   // First Slide
-  .section__first-slide {
+  .mainSlider__first {
     position: relative;
     width: 100%;
     display: flex;
 
-    .section__slide--btn-left,
-    .section__slide--btn-right {
-      position: absolute;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 3vw;
-      width: 3vw;
-      opacity: 50%;
-      background-color: white;
-      transform: translateY(-50%);
-      font-size: 0.9vw;
-    }
-
-    .section__slide--btn-left {
-      left: 0;
-      top: 50%;
-    }
-
-    .section__slide--btn-right {
-      right: 0;
-      top: 50%;
-    }
-
-    .section__slide--text {
+    .mainSlider__text {
       position: absolute;
       top: 28%;
       left: 7%;
       color: white;
 
-      .section__slide--text-large {
+      .mainSlider__text-large {
         font-family: Metropolis-bold;
         font-size: 2.5vw;
         margin-bottom: 0;
       }
 
-      .section__slide--text-medium {
+      .mainSlider__text-medium {
         font-family: Metropolis-light;
         font-size: 2.5vw;
         margin-top: 0.3vw;
         margin-bottom: 0.6vw;
       }
 
-      .section__slide--text-small {
+      .mainSlider__text-small {
         font-family: Metropolis-regular;
         font-size: 1.25vw;
         margin-top: 0;
         margin-bottom: 1vw;
       }
 
-      .section__slide--btn-show-more {
+      .mainSlider__button {
         font-family: Metropolis-bold;
         font-size: 0.8vw;
         color: #ffffff;
@@ -81,62 +87,38 @@ section {
   }
 
   // Second Slide
-  .section__second-slide {
+  .mainSlider__second {
     position: relative;
     width: 100%;
     display: flex;
 
-    .section__slide--btn-left,
-    .section__slide--btn-right {
-      position: absolute;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 3vw;
-      width: 3vw;
-      opacity: 50%;
-      background-color: white;
-      transform: translateY(-50%);
-      font-size: 0.9vw;
-    }
-
-    .section__slide--btn-left {
-      left: 0;
-      top: 50%;
-    }
-
-    .section__slide--btn-right {
-      right: 0;
-      top: 50%;
-    }
-
-    .section__slide--text {
+    .mainSlider__text {
       position: absolute;
       top: 28%;
       left: 7%;
       color: white;
 
-      .section__slide--text-large {
+      .mainSlider__text-large {
         font-family: Metropolis-bold;
         font-size: 2.5vw;
         margin-bottom: 0;
       }
 
-      .section__slide--text-medium {
+      .mainSlider__text-medium {
         font-family: Metropolis-light;
         font-size: 2.5vw;
         margin-top: 0.3vw;
         margin-bottom: 0.6vw;
       }
 
-      .section__slide--text-small {
+      .mainSlider__text-small {
         font-family: Metropolis-regular;
         font-size: 1.25vw;
         margin-top: 0;
         margin-bottom: 1vw;
       }
 
-      .section__slide--btn-show-more {
+      .mainSlider__button {
         font-family: Metropolis-bold;
         font-size: 0.8vw;
         color: white;
@@ -150,50 +132,54 @@ section {
     }
   }
 
+
   // Unvisible class
   .unvisible-slide {
     display: none;
   }
+}
+
 
   // Baners
-  .section__baners {
+  .baners {
     width: 100%;
     display: flex;
-
+    flex-direction: row;
+  
     // Baner images
-    .section__baner-image {
+    .baners__image {
       width: 100%;
       filter: brightness(0.7);
     }
-
+  
     // First baner
-    .section__baners--first-baner {
+    .baners__first {
       position: relative;
       height: auto;
       width: 33%;
       margin: 1.2vw 1.8vw 1.2vw 0;
 
-      .section__first-baner--text {
+      .baners__first-text {
         position: absolute;
-        top: 30%;
+        top: 18%;
         left: 8%;
         color: white;
         text-align: left;
-
-        .section__baner--text-large {
+  
+        .baners__text-large {
           font-family: Metropolis-bold;
           font-size: 2.5vw;
           margin-bottom: 0;
         }
-
-        .section__baner--text-medium {
+  
+        .baners__text-medium {
           font-family: Metropolis-light;
           font-size: 2.5vw;
           margin-top: 0.2vw;
           margin-bottom: 1vw;
         }
-
-        .section__baner--btn-show-more {
+  
+        .baners__button {
           height: 2.8vw;
           width: 10.7vw;
           margin-top: 0;
@@ -207,35 +193,35 @@ section {
         }
       }
     }
-
+  
     // Second baner
-    .section__baners--second-baner {
+    .baners__second {
       position: relative;
       height: auto;
       width: 33%;
       margin: 1.2vw 0;
-
-      .section__second-baner--text {
+  
+      .baners__second-text {
         position: absolute;
-        top: 30%;
+        top: 18%;
         left: 8%;
         color: white;
         text-align: left;
-
-        .section__baner--text-large {
+  
+        .baners__text-large {
           font-family: Metropolis-bold;
           font-size: 2.5vw;
           margin-bottom: 0;
         }
-
-        .section__baner--text-medium {
+  
+        .baners__text-medium {
           font-family: Metropolis-light;
           font-size: 2.5vw;
           margin-top: 0.2vw;
           margin-bottom: 1vw;
         }
-
-        .section__baner--btn-show-more {
+  
+        .baners__button {
           height: 2.8vw;
           width: 10.7vw;
           margin-top: 0;
@@ -249,35 +235,35 @@ section {
         }
       }
     }
-
+  
     // Third baner
-    .section__baners--third-baner {
+    .baners__third {
       position: relative;
       height: auto;
       width: 33%;
       margin: 1.2vw 0 1.2vw 1.8vw;
-
-      .section__third-baner--text {
+  
+      .baners__third-text {
         position: absolute;
-        top: 30%;
+        top: 18%;
         left: 8%;
         color: white;
         text-align: left;
-
-        .section__baner--text-large {
+  
+        .baners__text-large {
           font-family: Metropolis-bold;
           font-size: 2.5vw;
           margin-bottom: 0;
         }
-
-        .section__baner--text-medium {
+  
+        .baners__text-medium {
           font-family: Metropolis-light;
           font-size: 2.5vw;
           margin-top: 0.2vw;
           margin-bottom: 1vw;
         }
-
-        .section__baner--btn-show-more {
+  
+        .baners__button {
           height: 2.8vw;
           width: 10.7vw;
           margin-top: 0;
@@ -605,7 +591,7 @@ section {
       }
     }
   }
-}
+
 
 // SECTION MEDIA
 
