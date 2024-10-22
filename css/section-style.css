@@ -43,18 +43,18 @@
   left: 7%;
   color: white;
 }
-.mainSlider .mainSlider__first .mainSlider__text .mainSlider__text-large {
+.mainSlider .mainSlider__first .mainSlider__text .mainSlider__text--large {
   font-family: Metropolis-bold;
   font-size: 2.5vw;
   margin-bottom: 0;
 }
-.mainSlider .mainSlider__first .mainSlider__text .mainSlider__text-medium {
+.mainSlider .mainSlider__first .mainSlider__text .mainSlider__text--medium {
   font-family: Metropolis-light;
   font-size: 2.5vw;
   margin-top: 0.3vw;
   margin-bottom: 0.6vw;
 }
-.mainSlider .mainSlider__first .mainSlider__text .mainSlider__text-small {
+.mainSlider .mainSlider__first .mainSlider__text .mainSlider__text--small {
   font-family: Metropolis-regular;
   font-size: 1.25vw;
   margin-top: 0;
@@ -82,18 +82,18 @@
   left: 7%;
   color: white;
 }
-.mainSlider .mainSlider__second .mainSlider__text .mainSlider__text-large {
+.mainSlider .mainSlider__second .mainSlider__text .mainSlider__text--large {
   font-family: Metropolis-bold;
   font-size: 2.5vw;
   margin-bottom: 0;
 }
-.mainSlider .mainSlider__second .mainSlider__text .mainSlider__text-medium {
+.mainSlider .mainSlider__second .mainSlider__text .mainSlider__text--medium {
   font-family: Metropolis-light;
   font-size: 2.5vw;
   margin-top: 0.3vw;
   margin-bottom: 0.6vw;
 }
-.mainSlider .mainSlider__second .mainSlider__text .mainSlider__text-small {
+.mainSlider .mainSlider__second .mainSlider__text .mainSlider__text--small {
   font-family: Metropolis-regular;
   font-size: 1.25vw;
   margin-top: 0;
@@ -136,12 +136,12 @@
   color: white;
   text-align: left;
 }
-.baners .baners__first .baners__first-text .baners__text-large {
+.baners .baners__first .baners__first-text .baners__text--large {
   font-family: Metropolis-bold;
   font-size: 2.5vw;
   margin-bottom: 0;
 }
-.baners .baners__first .baners__first-text .baners__text-medium {
+.baners .baners__first .baners__first-text .baners__text--medium {
   font-family: Metropolis-light;
   font-size: 2.5vw;
   margin-top: 0.2vw;
@@ -172,12 +172,12 @@
   color: white;
   text-align: left;
 }
-.baners .baners__second .baners__second-text .baners__text-large {
+.baners .baners__second .baners__second-text .baners__text--large {
   font-family: Metropolis-bold;
   font-size: 2.5vw;
   margin-bottom: 0;
 }
-.baners .baners__second .baners__second-text .baners__text-medium {
+.baners .baners__second .baners__second-text .baners__text--medium {
   font-family: Metropolis-light;
   font-size: 2.5vw;
   margin-top: 0.2vw;
@@ -208,12 +208,12 @@
   color: white;
   text-align: left;
 }
-.baners .baners__third .baners__third-text .baners__text-large {
+.baners .baners__third .baners__third-text .baners__text--large {
   font-family: Metropolis-bold;
   font-size: 2.5vw;
   margin-bottom: 0;
 }
-.baners .baners__third .baners__third-text .baners__text-medium {
+.baners .baners__third .baners__third-text .baners__text--medium {
   font-family: Metropolis-light;
   font-size: 2.5vw;
   margin-top: 0.2vw;
