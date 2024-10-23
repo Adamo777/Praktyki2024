@@ -29,6 +29,11 @@
   text-transform: uppercase;
   font-family: Metropolis-bold;
   margin-right: 4.7vw;
+  transition: font-size 0.3s ease;
+}
+
+.header__navItem:hover{
+  font-size: 1vw;
 }
 .header__navIcon {
   font-size: 1.6vw;
@@ -40,6 +45,9 @@
   color: white;
   height: 3.1vw;
   cursor: pointer;
+  transition: transform 0.3s ease;
+
+
 
   .header__navItem {
     margin-right: 0;
@@ -59,6 +67,10 @@
     color: black;
     line-height: normal;
   }
+}
+
+.header__cartContainer:hover {
+  transform: scale(1.1);
 }
 
 .header__cartInfo {
@@ -85,6 +97,7 @@
   background-color: variables.$primary-green;
   border: 1px solid variables.$primary-green;
 }
+
 
 /* HEADER MEDIA */
 
@@ -135,17 +148,18 @@
     padding: 0;
 
     .header__items {
-      z-index: 1;
+      z-index: 2;
       position: fixed;
       padding-bottom: unset;
-      bottom: 0;
-      left: 50%;
-      transform: translate(-50%, -50%);
       border-bottom: none;
+      bottom: 0;
       background-color: white;
-      // width: 100%;
+      width: 100%;
       justify-content: center;
-      align-items: center;
+
+      .header__navMenu{
+        margin: unset;
+      }
 
       .header__logo {
         display: none;

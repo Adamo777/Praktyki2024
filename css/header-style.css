@@ -28,6 +28,11 @@
   text-transform: uppercase;
   font-family: Metropolis-bold;
   margin-right: 4.7vw;
+  transition: font-size 0.3s ease;
+}
+
+.header__navItem:hover {
+  font-size: 1vw;
 }
 
 .header__navIcon {
@@ -40,6 +45,7 @@
   color: white;
   height: 3.1vw;
   cursor: pointer;
+  transition: transform 0.3s ease;
 }
 .header__cartContainer .header__navItem {
   margin-right: 0;
@@ -57,6 +63,10 @@
   font-size: 1.6vw;
   color: black;
   line-height: normal;
+}
+
+.header__cartContainer:hover {
+  transform: scale(1.1);
 }
 
 .header__cartInfo {
@@ -126,16 +136,17 @@
     padding: 0;
   }
   .header .header__items {
-    z-index: 1;
+    z-index: 2;
     position: fixed;
     padding-bottom: unset;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, -50%);
     border-bottom: none;
+    bottom: 0;
     background-color: white;
+    width: 100%;
     justify-content: center;
-    align-items: center;
+  }
+  .header .header__items .header__navMenu {
+    margin: unset;
   }
   .header .header__items .header__logo {
     display: none;

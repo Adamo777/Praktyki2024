@@ -88,6 +88,11 @@ main {
 .baners__image {
   width: 100%;
   filter: brightness(0.7);
+  transition: transform 0.4s ease;
+}
+
+.baners__image:hover {
+  transform: scale(1.1);
 }
 
 .baners__item {
@@ -95,6 +100,7 @@ main {
   height: auto;
   width: 33%;
   margin: 1.2vw 1.8vw;
+  overflow: hidden;
 }
 
 .baners__item:nth-child(2) {
@@ -354,13 +360,17 @@ main {
   font-size: 0.8vw;
   text-transform: uppercase;
   border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: border-color 0.3s ease-in-out;
 }
 .why-us .why-us__tilesContainer .why-us__tile .why-us__tile-text {
   margin-top: 1.2vw;
 }
+.why-us .why-us__tilesContainer .why-us__tile:hover {
+  border-color: #f74137;
+}
 .why-us .why-us__button {
   position: absolute;
-  top: 80%;
+  top: 85%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 12.5vw;
@@ -405,6 +415,10 @@ main {
   text-decoration: none;
   font-size: 0.7vw;
   font-family: Metropolis-light;
+  transition: color 0.3s ease;
+}
+.footer .footer__info .footer__list .footer__listLink:hover {
+  color: #f74137;
 }
 
 @media only screen and (max-width: 920px) {
@@ -548,19 +562,13 @@ main {
     display: flex;
     justify-content: center;
   }
-  .footer .footer__info .footer__infoHeading .footer-red-border {
-    display: none;
-  }
-  .footer .footer__info .footer-list {
-    line-height: 2vw;
-  }
-  .footer .footer__info .footer-list .footer__list {
+  .footer .footer__info .footer__list {
     display: none;
     padding-left: 0;
     margin-top: 0.5vw;
     text-align: center;
   }
-  .footer .footer__info .footer-list .footer__list .footer__listLink {
+  .footer .footer__info .footer__list .footer__listLink {
     text-transform: uppercase;
     color: white;
     text-decoration: none;
@@ -569,7 +577,7 @@ main {
     display: block;
     padding: 0.3vw 0;
   }
-  .footer .footer__info .footer-list.active .footer__list {
+  .footer .footer__info .footer__list.active {
     display: block;
   }
 }

@@ -101,6 +101,12 @@ main {
 .baners__image {
   width: 100%;
   filter: brightness(0.7);
+  transition: transform 0.4s ease;
+
+}
+
+.baners__image:hover{
+  transform: scale(1.1);
 }
 
 .baners__item {
@@ -108,6 +114,7 @@ main {
   height: auto;
   width: 33%;
   margin: 1.2vw 1.8vw;
+  overflow: hidden;
 }
 
 .baners__item:nth-child(2) {
@@ -389,16 +396,21 @@ main {
       font-size: 0.8vw;
       text-transform: uppercase;
       border: 1px solid rgba(255, 255, 255, 0.3);
+      transition: border-color 0.3s ease-in-out;
 
       .why-us__tile-text {
         margin-top: 1.2vw;
       }
     }
+
+    .why-us__tile:hover{
+      border-color: variables.$primary-red;
+    }
   }
 
   .why-us__button {
     position: absolute;
-    top: 80%;
+    top: 85%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 12.5vw;
@@ -446,6 +458,11 @@ main {
           text-decoration: none;
           font-size: 0.7vw;
           font-family: Metropolis-light;
+          transition: color 0.3s ease;
+        }
+
+        .footer__listLink:hover{
+          color: variables.$primary-red;
         }
       }
     
@@ -636,14 +653,7 @@ main {
         line-height: 3vw;
         display: flex;
         justify-content: center;
-
-        .footer-red-border {
-          display: none;
-        }
       }
-
-      .footer-list {
-        line-height: 2vw;
 
         .footer__list {
           display: none;
@@ -660,12 +670,12 @@ main {
             display: block;
             padding: 0.3vw 0;
           }
+          &.active{
+            display: block;
+          }
         }
 
-        &.active .footer__list {
-          display: block;
-        }
-      }
+      
     }
   }
 }
